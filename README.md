@@ -9,10 +9,11 @@ Completed:
 - Sprint 1: Docker foundation (FastAPI + React + Compose)
 - Sprint 2: UPSC test JSON data, loader validation, and scoring engine
 - Sprint 3: Exams/tests/attempts API with SQLite persistence
+- Sprint 4: Navigation pages (Home → Instructions)
 
 Next:
 
-- Sprint 4: Navigation pages (Home → Instructions)
+- Sprint 5: Timed test attempt interface
 
 ## Quick start
 
