@@ -3,6 +3,7 @@ import type {
   Question,
   QuestionPaletteStatus,
 } from '../types/quiz'
+import { parseUtcMs } from './datetime'
 
 export function getQuestionStatus(
   question: Question,
@@ -98,8 +99,8 @@ export function formatTimeTaken(
   if (!submittedAt) {
     return '—'
   }
-  const startMs = Date.parse(startedAt)
-  const endMs = Date.parse(submittedAt)
+  const startMs = parseUtcMs(startedAt)
+  const endMs = parseUtcMs(submittedAt)
   if (Number.isNaN(startMs) || Number.isNaN(endMs) || endMs < startMs) {
     return '—'
   }

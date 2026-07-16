@@ -1,9 +1,10 @@
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_serializer, field_validator
 
 from app.models.attempt import AttemptStatus
+from app.utils.time import to_utc_iso
 
 
 class ExamSummary(BaseModel):
@@ -86,6 +87,12 @@ class AttemptResponseOut(BaseModel):
     is_visited: bool
     updated_at: datetime
 
+    @field_serializer("updated_at")
+    def serialize_updated_at(self, value: datetime) -> str:
+        serialized = to_utc_iso(value)
+        assert serialized is not None
+        return serialized
+
 
 class AttemptOut(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -104,6 +111,10 @@ class AttemptOut(BaseModel):
     dropped_count: Optional[int]
     accuracy: Optional[float]
     responses: List[AttemptResponseOut]
+
+    @field_serializer("started_at", "expires_at", "submitted_at")
+    def serialize_attempt_datetimes(self, value: Optional[datetime]) -> Optional[str]:
+        return to_utc_iso(value)
 
 
 class ReviewQuestionOut(BaseModel):
