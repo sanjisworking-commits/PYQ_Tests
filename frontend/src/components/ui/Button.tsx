@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
 type Variant = 'primary' | 'secondary' | 'ghost'
@@ -34,20 +34,22 @@ function classesFor(variant: Variant, className: string): string {
   return `${baseClasses} ${variantClasses[variant]} ${className}`.trim()
 }
 
-export function Button(props: ButtonAsButton | ButtonAsLink) {
-  if (props.to) {
-    const { to, children, variant = 'primary', className = '' } = props
-    return (
-      <Link to={to} className={classesFor(variant, className)}>
-        {children}
-      </Link>
-    )
-  }
+export const Button = forwardRef<HTMLButtonElement, ButtonAsButton | ButtonAsLink>(
+  function Button(props, ref) {
+    if (props.to) {
+      const { to, children, variant = 'primary', className = '' } = props
+      return (
+        <Link to={to} className={classesFor(variant, className)}>
+          {children}
+        </Link>
+      )
+    }
 
-  const { children, variant = 'primary', className = '', ...rest } = props
-  return (
-    <button className={classesFor(variant, className)} {...rest}>
-      {children}
-    </button>
-  )
-}
+    const { children, variant = 'primary', className = '', ...rest } = props
+    return (
+      <button ref={ref} className={classesFor(variant, className)} {...rest}>
+        {children}
+      </button>
+    )
+  },
+)

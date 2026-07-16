@@ -94,14 +94,15 @@ def update_responses(
         )
 
     paper = get_test_paper_or_404(attempt.test_id)
-    valid_numbers = {question.number for question in paper.questions}
+    question_by_number = {question.number: question for question in paper.questions}
     response_map: Dict[int, AttemptResponse] = {
         item.question_number: item for item in attempt.responses
     }
     now = utc_now()
 
     for update in updates:
-        if update.question_number not in valid_numbers:
+        question = question_by_number.get(update.question_number)
+        if question is None:
             raise AttemptServiceError(
                 f"unknown question_number: {update.question_number}",
                 status.HTTP_422_UNPROCESSABLE_ENTITY,
@@ -116,11 +117,14 @@ def update_responses(
 
         unset_data = update.model_dump(exclude_unset=True)
         if "selected_option" in unset_data:
-            row.selected_option = update.selected_option
+            # Dropped questions are never scored; keep selection cleared.
+            row.selected_option = None if question.is_dropped else update.selected_option
             if "is_visited" not in unset_data:
                 row.is_visited = True
         if "is_marked_for_review" in unset_data and update.is_marked_for_review is not None:
-            row.is_marked_for_review = update.is_marked_for_review
+            row.is_marked_for_review = (
+                False if question.is_dropped else update.is_marked_for_review
+            )
         if "is_visited" in unset_data and update.is_visited is not None:
             row.is_visited = update.is_visited
 

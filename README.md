@@ -2,21 +2,17 @@
 
 Personal Docker-hosted UPSC previous-year-question quiz platform.
 
-## Current status
+## MVP status
 
-Completed:
+Sprints 1–8 are complete for the sample GS Paper I 2026 set (5 questions, including dropped Q64).
 
-- Sprint 1: Docker foundation (FastAPI + React + Compose)
-- Sprint 2: UPSC test JSON data, loader validation, and scoring engine
-- Sprint 3: Exams/tests/attempts API with SQLite persistence
-- Sprint 4: Navigation pages (Home → Instructions)
-- Sprint 5: Timed test attempt interface
-- Sprint 6: Results polish + answer review
-- Sprint 7: Personal scores dashboard
+You can:
 
-Next:
-
-- Sprint 8: Hardening + MVP polish
+1. Browse Home → UPSC → Attempt Tests → 2026
+2. Start a timed attempt
+3. Submit and view results
+4. Review answers
+5. See scores on the personal dashboard
 
 ## Quick start
 
@@ -29,28 +25,57 @@ Then open:
 | Service | URL |
 |---------|-----|
 | Frontend | http://localhost:5173 |
+| Dashboard | http://localhost:5173/dashboard |
 | Backend API | http://localhost:8000 |
 | API docs | http://localhost:8000/docs |
 | Health check | http://localhost:8000/api/health |
-
-Useful API routes (Sprint 3):
-
-- `GET /api/exams`
-- `GET /api/exams/upsc/years`
-- `GET /api/exams/upsc/2026/tests`
-- `GET /api/tests/upsc-2026-gs-paper-1`
-- `POST /api/attempts`
-- `PATCH /api/attempts/{attempt_id}/responses`
-- `GET /api/attempts/{attempt_id}`
-- `POST /api/attempts/{attempt_id}/submit`
-- `GET /api/attempts/{attempt_id}/review`
-- `GET /api/dashboard/attempts`
 
 Stop with:
 
 ```bash
 docker compose down
 ```
+
+SQLite attempt data persists in the `sqlite_data` Docker volume.
+
+## User flow
+
+```text
+Home
+ → Attempt Tests
+ → 2026
+ → General Studies Paper I
+ → Instructions → Begin Test
+ → Attempt UI
+ → Submit
+ → Results → Review Answers
+ → Dashboard (scores)
+```
+
+## Current sample paper
+
+Path: `backend/data/upsc/2026/gs-paper-1.json`
+
+- 5 representative questions (standard, statements, matching pairs, table, dropped)
+- Official maximum marks still shown as **200**
+- Marking: +2 / −0.6667 / 0 for unattempted
+- Question 64 is dropped and excluded from scoring
+
+Full 100-question transcription is a later content sprint.
+
+## API routes
+
+- `GET /api/health`
+- `GET /api/exams`
+- `GET /api/exams/upsc/years`
+- `GET /api/exams/upsc/{year}/tests`
+- `GET /api/tests/{test_id}`
+- `POST /api/attempts`
+- `PATCH /api/attempts/{attempt_id}/responses`
+- `GET /api/attempts/{attempt_id}`
+- `POST /api/attempts/{attempt_id}/submit`
+- `GET /api/attempts/{attempt_id}/review`
+- `GET /api/dashboard/attempts`
 
 ## Local development (optional)
 
@@ -62,6 +87,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
+pytest
 ```
 
 ### Frontend
@@ -77,19 +103,17 @@ Set `VITE_API_BASE_URL=http://localhost:8000` if needed.
 ## Repository layout
 
 ```text
-backend/           FastAPI app
+backend/           FastAPI app, scoring, attempts API
 backend/data/      Structured UPSC test JSON
-backend/tests/     Scoring and loader tests
-frontend/          React + Vite app
+backend/tests/     Scoring, loader, API tests
+frontend/          React + Vite + Tailwind app
+sample_data/       Reference PDFs
 docker-compose.yml
 ```
 
-## Backend tests
+## Notes
 
-```bash
-cd backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pytest
-```
+- No login in MVP (personal local use)
+- No public PDF upload UI
+- Questions live in JSON files, not React components
+- Correct answers are revealed only after submit

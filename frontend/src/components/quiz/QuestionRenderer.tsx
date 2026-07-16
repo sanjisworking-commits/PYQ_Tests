@@ -48,6 +48,7 @@ export function QuestionRenderer({
       {question.table ? <QuestionTable table={question.table} /> : null}
 
       <OptionList
+        questionNumber={question.number}
         options={question.options}
         selectedOption={response?.selected_option ?? null}
         disabled={question.is_dropped}
