@@ -107,6 +107,30 @@ def test_attempt_lifecycle_score_and_review(client: TestClient) -> None:
     assert by_number[64]["is_correct"] is None
 
 
+def test_create_attempt_emits_utc_expiry_and_stays_in_progress(
+    client: TestClient,
+) -> None:
+    from datetime import datetime, timezone
+
+    created = client.post("/api/attempts", json={"test_id": TEST_ID})
+    assert created.status_code == 201
+    body = created.json()
+
+    assert body["status"] == "in_progress"
+    assert body["started_at"].endswith("Z")
+    assert body["expires_at"].endswith("Z")
+
+    started = datetime.fromisoformat(body["started_at"].replace("Z", "+00:00"))
+    expires = datetime.fromisoformat(body["expires_at"].replace("Z", "+00:00"))
+    assert expires - started == timedelta(minutes=120)
+    assert expires > datetime.now(timezone.utc) + timedelta(minutes=110)
+
+    fetched = client.get(f"/api/attempts/{body['id']}")
+    assert fetched.status_code == 200
+    assert fetched.json()["status"] == "in_progress"
+    assert fetched.json()["expires_at"].endswith("Z")
+
+
 def test_patch_after_submit_rejected(client: TestClient) -> None:
     created = client.post("/api/attempts", json={"test_id": TEST_ID})
     attempt_id = created.json()["id"]

@@ -81,9 +81,13 @@ export function AttemptPage() {
     void finishAttempt(true)
   }, [finishAttempt])
 
+  const timerEnabled =
+    !loading && attempt?.status === 'in_progress' && Boolean(attempt?.expires_at)
+
   const { remainingSeconds, isWarning } = useTimer(
-    attempt?.status === 'in_progress' ? attempt.expires_at : null,
+    timerEnabled && attempt ? attempt.expires_at : null,
     handleExpire,
+    timerEnabled,
   )
 
   useEffect(() => {

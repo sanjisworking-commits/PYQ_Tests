@@ -1,9 +1,10 @@
 from datetime import datetime
 from typing import List, Optional
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, field_serializer
 
 from app.models.attempt import AttemptStatus
+from app.utils.time import to_utc_iso
 
 
 class DashboardAttemptOut(BaseModel):
@@ -21,6 +22,10 @@ class DashboardAttemptOut(BaseModel):
     started_at: datetime
     submitted_at: Optional[datetime]
     time_taken_seconds: Optional[int]
+
+    @field_serializer("started_at", "submitted_at")
+    def serialize_dashboard_datetimes(self, value: Optional[datetime]) -> Optional[str]:
+        return to_utc_iso(value)
 
 
 class DashboardTestGroupOut(BaseModel):
