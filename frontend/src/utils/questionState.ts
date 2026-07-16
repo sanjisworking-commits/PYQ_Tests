@@ -90,3 +90,35 @@ export function formatDuration(totalSeconds: number): string {
   }
   return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
 }
+
+export function formatTimeTaken(
+  startedAt: string,
+  submittedAt: string | null,
+): string {
+  if (!submittedAt) {
+    return '—'
+  }
+  const startMs = Date.parse(startedAt)
+  const endMs = Date.parse(submittedAt)
+  if (Number.isNaN(startMs) || Number.isNaN(endMs) || endMs < startMs) {
+    return '—'
+  }
+  return formatDuration(Math.floor((endMs - startMs) / 1000))
+}
+
+export function getReviewVerdict(question: {
+  is_dropped: boolean
+  selected_option: string | null
+  is_correct: boolean | null
+}): 'dropped' | 'correct' | 'incorrect' | 'unattempted' {
+  if (question.is_dropped) {
+    return 'dropped'
+  }
+  if (question.selected_option == null) {
+    return 'unattempted'
+  }
+  if (question.is_correct) {
+    return 'correct'
+  }
+  return 'incorrect'
+}

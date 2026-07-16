@@ -1,5 +1,6 @@
 import type {
   Attempt,
+  AttemptReview,
   ExamSummary,
   ResponseUpdate,
   TestDetail,
@@ -117,4 +118,8 @@ export function submitAttempt(attemptId: string): Promise<Attempt> {
   return request<Attempt>(`/api/attempts/${attemptId}/submit`, {
     method: 'POST',
   })
+}
+
+export function fetchAttemptReview(attemptId: string): Promise<AttemptReview> {
+  return request<AttemptReview>(`/api/attempts/${attemptId}/review`)
 }

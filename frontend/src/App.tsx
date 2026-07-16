@@ -5,6 +5,7 @@ import { DashboardPlaceholderPage } from './pages/DashboardPlaceholderPage'
 import { HomePage } from './pages/HomePage'
 import { InstructionsPage } from './pages/InstructionsPage'
 import { ResultsPage } from './pages/ResultsPage'
+import { ReviewPage } from './pages/ReviewPage'
 import { UpscPage } from './pages/UpscPage'
 import { YearTestsPage } from './pages/YearTestsPage'
 
@@ -25,6 +26,7 @@ function App() {
           element={<AttemptPage />}
         />
         <Route path="/results/:attemptId" element={<ResultsPage />} />
+        <Route path="/review/:attemptId" element={<ReviewPage />} />
         <Route path="/dashboard" element={<DashboardPlaceholderPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
