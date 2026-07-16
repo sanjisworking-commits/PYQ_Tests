@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AttemptPage } from './pages/AttemptPage'
 import { AttemptTestsPage } from './pages/AttemptTestsPage'
-import { DashboardPlaceholderPage } from './pages/DashboardPlaceholderPage'
+import { DashboardPage } from './pages/DashboardPage'
 import { HomePage } from './pages/HomePage'
 import { InstructionsPage } from './pages/InstructionsPage'
 import { ResultsPage } from './pages/ResultsPage'
@@ -27,7 +27,7 @@ function App() {
         />
         <Route path="/results/:attemptId" element={<ResultsPage />} />
         <Route path="/review/:attemptId" element={<ReviewPage />} />
-        <Route path="/dashboard" element={<DashboardPlaceholderPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

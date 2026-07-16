@@ -1,6 +1,7 @@
 import type {
   Attempt,
   AttemptReview,
+  DashboardResponse,
   ExamSummary,
   ResponseUpdate,
   TestDetail,
@@ -122,4 +123,11 @@ export function submitAttempt(attemptId: string): Promise<Attempt> {
 
 export function fetchAttemptReview(attemptId: string): Promise<AttemptReview> {
   return request<AttemptReview>(`/api/attempts/${attemptId}/review`)
+}
+
+export function fetchDashboardAttempts(
+  testId?: string,
+): Promise<DashboardResponse> {
+  const query = testId ? `?test_id=${encodeURIComponent(testId)}` : ''
+  return request<DashboardResponse>(`/api/dashboard/attempts${query}`)
 }

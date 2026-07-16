@@ -12,10 +12,11 @@ Completed:
 - Sprint 4: Navigation pages (Home → Instructions)
 - Sprint 5: Timed test attempt interface
 - Sprint 6: Results polish + answer review
+- Sprint 7: Personal scores dashboard
 
 Next:
 
-- Sprint 7: Personal scores dashboard
+- Sprint 8: Hardening + MVP polish
 
 ## Quick start
 
@@ -43,6 +44,7 @@ Useful API routes (Sprint 3):
 - `GET /api/attempts/{attempt_id}`
 - `POST /api/attempts/{attempt_id}/submit`
 - `GET /api/attempts/{attempt_id}/review`
+- `GET /api/dashboard/attempts`
 
 Stop with:
 
