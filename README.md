@@ -4,7 +4,7 @@ Personal Docker-hosted UPSC previous-year-question quiz platform.
 
 ## MVP status
 
-Sprints 1–8 are complete for the sample GS Paper I 2026 set (5 questions, including dropped Q64).
+Sprints 1–8 are complete. GS Paper I 2026 is loaded as the full official set (100 questions, Q64 dropped).
 
 You can:
 
@@ -52,16 +52,14 @@ Home
  → Dashboard (scores)
 ```
 
-## Current sample paper
+## Current paper
 
 Path: `backend/data/upsc/2026/gs-paper-1.json`
 
-- 5 representative questions (standard, statements, matching pairs, table, dropped)
-- Official maximum marks still shown as **200**
+- Full UPSC CSE Prelims 2026 GS Paper I Series A — **100 questions**
+- Official maximum marks **200**
 - Marking: +2 / −0.6667 / 0 for unattempted
-- Question 64 is dropped and excluded from scoring
-
-Full 100-question transcription is a later content sprint.
+- Question 64 is dropped; **99** questions used for scoring
 
 ## API routes
 

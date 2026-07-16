@@ -7,7 +7,7 @@ import { Button } from '../components/ui/Button'
 import { ErrorState } from '../components/ui/ErrorState'
 import { LoadingState } from '../components/ui/LoadingState'
 import type { TestSummary } from '../types/quiz'
-import { saveActiveAttempt } from '../utils/storage'
+import { clearActiveAttempt, saveActiveAttempt } from '../utils/storage'
 
 export function InstructionsPage() {
   const { year, slug } = useParams()
@@ -55,6 +55,7 @@ export function InstructionsPage() {
     setStarting(true)
     setError(null)
     try {
+      clearActiveAttempt(testId)
       const attempt = await createAttempt(testId)
       saveActiveAttempt(testId, {
         attemptId: attempt.id,
