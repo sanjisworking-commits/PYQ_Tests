@@ -166,3 +166,70 @@ def test_review_before_submit_rejected(client: TestClient) -> None:
     attempt_id = created.json()["id"]
     review = client.get(f"/api/attempts/{attempt_id}/review")
     assert review.status_code == 409
+
+
+def test_clear_response_and_dropped_selection_ignored(client: TestClient) -> None:
+    created = client.post("/api/attempts", json={"test_id": TEST_ID})
+    attempt_id = created.json()["id"]
+
+    selected = client.patch(
+        f"/api/attempts/{attempt_id}/responses",
+        json={
+            "responses": [
+                {"question_number": 1, "selected_option": "D", "is_visited": True},
+                {"question_number": 64, "selected_option": "A", "is_visited": True},
+            ]
+        },
+    )
+    assert selected.status_code == 200
+    by_number = {
+        item["question_number"]: item for item in selected.json()["responses"]
+    }
+    assert by_number[1]["selected_option"] == "D"
+    assert by_number[64]["selected_option"] is None
+
+    cleared = client.patch(
+        f"/api/attempts/{attempt_id}/responses",
+        json={
+            "responses": [
+                {"question_number": 1, "selected_option": None, "is_visited": True}
+            ]
+        },
+    )
+    assert cleared.status_code == 200
+    cleared_map = {
+        item["question_number"]: item for item in cleared.json()["responses"]
+    }
+    assert cleared_map[1]["selected_option"] is None
+
+    submitted = client.post(f"/api/attempts/{attempt_id}/submit")
+    assert submitted.status_code == 200
+    body = submitted.json()
+    assert body["correct_count"] == 0
+    assert body["incorrect_count"] == 0
+    assert body["unattempted_count"] == 4
+    assert body["dropped_count"] == 1
+    assert body["score"] == 0.0
+
+
+def test_expired_patch_auto_submits(client: TestClient) -> None:
+    from app import database as db_module
+
+    created = client.post("/api/attempts", json={"test_id": TEST_ID})
+    attempt_id = created.json()["id"]
+
+    db = db_module.SessionLocal()
+    try:
+        attempt = db.query(Attempt).filter(Attempt.id == attempt_id).one()
+        attempt.expires_at = utc_now() - timedelta(seconds=1)
+        db.commit()
+    finally:
+        db.close()
+
+    response = client.patch(
+        f"/api/attempts/{attempt_id}/responses",
+        json={"responses": [{"question_number": 1, "selected_option": "D"}]},
+    )
+    assert response.status_code == 409
+    fetched = client.get(f"/api/attempts/{attempt_id}")
+    assert fetched.json()["status"] == "auto_submitted"

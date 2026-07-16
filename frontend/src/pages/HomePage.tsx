@@ -20,8 +20,8 @@ export function HomePage() {
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button to="/upsc/tests">Attempt Tests</Button>
-          <Button to="/upsc" variant="secondary">
-            About UPSC section
+          <Button to="/dashboard" variant="secondary">
+            View Scores
           </Button>
         </div>
       </section>
