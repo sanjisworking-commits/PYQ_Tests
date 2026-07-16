@@ -2,15 +2,16 @@
 
 Personal Docker-hosted UPSC previous-year-question quiz platform.
 
-## Sprint 1 status
+## Current status
 
-Foundation only:
+Completed:
 
-- FastAPI backend with health check
-- React + TypeScript + Vite + Tailwind frontend
-- Docker Compose wiring
+- Sprint 1: Docker foundation (FastAPI + React + Compose)
+- Sprint 2: UPSC test JSON data, loader validation, and scoring engine
 
-Quiz flows, attempts, and scoring arrive in later sprints.
+Next:
+
+- Sprint 3: Attempts API and SQLite persistence
 
 ## Quick start
 
@@ -58,7 +59,19 @@ Set `VITE_API_BASE_URL=http://localhost:8000` if needed.
 ## Repository layout
 
 ```text
-backend/     FastAPI app
-frontend/    React + Vite app
+backend/           FastAPI app
+backend/data/      Structured UPSC test JSON
+backend/tests/     Scoring and loader tests
+frontend/          React + Vite app
 docker-compose.yml
+```
+
+## Backend tests
+
+```bash
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pytest
 ```
