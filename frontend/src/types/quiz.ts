@@ -144,3 +144,34 @@ export type AttemptReview = {
   attempt: Attempt
   questions: ReviewQuestion[]
 }
+
+export type DashboardAttempt = {
+  attempt_id: string
+  status: AttemptStatus
+  score: number | null
+  maximum_marks: number
+  correct_count: number | null
+  incorrect_count: number | null
+  unattempted_count: number | null
+  dropped_count: number | null
+  accuracy: number | null
+  started_at: string
+  submitted_at: string | null
+  time_taken_seconds: number | null
+}
+
+export type DashboardTestGroup = {
+  test_id: string
+  exam: string
+  year: number
+  paper: string
+  series: string
+  slug: string
+  maximum_marks: number
+  attempts: DashboardAttempt[]
+}
+
+export type DashboardResponse = {
+  total_attempts: number
+  tests: DashboardTestGroup[]
+}

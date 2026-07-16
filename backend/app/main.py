@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import init_db
-from app.routers import attempts, exams, tests
+from app.routers import attempts, dashboard, exams, tests
 
 
 @asynccontextmanager
@@ -17,7 +17,7 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
 app = FastAPI(
     title="PYQ Quiz API",
     description="UPSC previous-year-question quiz platform API",
-    version="0.3.0",
+    version="0.7.0",
     lifespan=lifespan,
 )
 
@@ -35,6 +35,7 @@ app.add_middleware(
 app.include_router(exams.router)
 app.include_router(tests.router)
 app.include_router(attempts.router)
+app.include_router(dashboard.router)
 
 
 @app.get("/api/health")
