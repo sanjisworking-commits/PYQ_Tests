@@ -1,4 +1,11 @@
-import type { ExamSummary, TestSummary, YearSummary } from '../types/quiz'
+import type {
+  Attempt,
+  ExamSummary,
+  ResponseUpdate,
+  TestDetail,
+  TestSummary,
+  YearSummary,
+} from '../types/quiz'
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') || 'http://localhost:8000'
@@ -13,13 +20,23 @@ export class ApiError extends Error {
   }
 }
 
-async function request<T>(path: string): Promise<T> {
-  const response = await fetch(`${API_BASE_URL}${path}`)
+async function request<T>(
+  path: string,
+  options: RequestInit = {},
+): Promise<T> {
+  const response = await fetch(`${API_BASE_URL}${path}`, {
+    headers: {
+      'Content-Type': 'application/json',
+      ...(options.headers ?? {}),
+    },
+    ...options,
+  })
+
   if (!response.ok) {
     let detail = `Request failed (${response.status})`
     try {
       const body = (await response.json()) as { detail?: string }
-      if (body.detail) {
+      if (typeof body.detail === 'string') {
         detail = body.detail
       }
     } catch {
@@ -27,6 +44,11 @@ async function request<T>(path: string): Promise<T> {
     }
     throw new ApiError(detail, response.status)
   }
+
+  if (response.status === 204) {
+    return undefined as T
+  }
+
   return (await response.json()) as T
 }
 
@@ -47,10 +69,7 @@ export function fetchUpscTestsForYear(year: number): Promise<TestSummary[]> {
 }
 
 export async function fetchTest(testId: string): Promise<TestSummary> {
-  // Detail payload includes questions; navigation pages only need summary fields.
-  const detail = await request<TestSummary & { questions?: unknown }>(
-    `/api/tests/${testId}`,
-  )
+  const detail = await fetchTestDetail(testId)
   return {
     id: detail.id,
     exam: detail.exam,
@@ -67,4 +86,35 @@ export async function fetchTest(testId: string): Promise<TestSummary> {
     dropped_question_numbers: detail.dropped_question_numbers,
     status: detail.status,
   }
+}
+
+export function fetchTestDetail(testId: string): Promise<TestDetail> {
+  return request<TestDetail>(`/api/tests/${testId}`)
+}
+
+export function createAttempt(testId: string): Promise<Attempt> {
+  return request<Attempt>('/api/attempts', {
+    method: 'POST',
+    body: JSON.stringify({ test_id: testId }),
+  })
+}
+
+export function fetchAttempt(attemptId: string): Promise<Attempt> {
+  return request<Attempt>(`/api/attempts/${attemptId}`)
+}
+
+export function patchAttemptResponses(
+  attemptId: string,
+  responses: ResponseUpdate[],
+): Promise<Attempt> {
+  return request<Attempt>(`/api/attempts/${attemptId}/responses`, {
+    method: 'PATCH',
+    body: JSON.stringify({ responses }),
+  })
+}
+
+export function submitAttempt(attemptId: string): Promise<Attempt> {
+  return request<Attempt>(`/api/attempts/${attemptId}/submit`, {
+    method: 'POST',
+  })
 }

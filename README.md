@@ -10,10 +10,11 @@ Completed:
 - Sprint 2: UPSC test JSON data, loader validation, and scoring engine
 - Sprint 3: Exams/tests/attempts API with SQLite persistence
 - Sprint 4: Navigation pages (Home → Instructions)
+- Sprint 5: Timed test attempt interface
 
 Next:
 
-- Sprint 5: Timed test attempt interface
+- Sprint 6: Results polish + answer review
 
 ## Quick start
 

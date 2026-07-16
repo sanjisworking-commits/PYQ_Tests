@@ -1,9 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { AttemptPlaceholderPage } from './pages/AttemptPlaceholderPage'
+import { AttemptPage } from './pages/AttemptPage'
 import { AttemptTestsPage } from './pages/AttemptTestsPage'
 import { DashboardPlaceholderPage } from './pages/DashboardPlaceholderPage'
 import { HomePage } from './pages/HomePage'
 import { InstructionsPage } from './pages/InstructionsPage'
+import { ResultsPage } from './pages/ResultsPage'
 import { UpscPage } from './pages/UpscPage'
 import { YearTestsPage } from './pages/YearTestsPage'
 
@@ -21,8 +22,9 @@ function App() {
         />
         <Route
           path="/upsc/tests/:year/:slug/attempt"
-          element={<AttemptPlaceholderPage />}
+          element={<AttemptPage />}
         />
+        <Route path="/results/:attemptId" element={<ResultsPage />} />
         <Route path="/dashboard" element={<DashboardPlaceholderPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
