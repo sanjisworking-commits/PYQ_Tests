@@ -8,10 +8,11 @@ Completed:
 
 - Sprint 1: Docker foundation (FastAPI + React + Compose)
 - Sprint 2: UPSC test JSON data, loader validation, and scoring engine
+- Sprint 3: Exams/tests/attempts API with SQLite persistence
 
 Next:
 
-- Sprint 3: Attempts API and SQLite persistence
+- Sprint 4: Navigation pages (Home → Instructions)
 
 ## Quick start
 
@@ -27,6 +28,18 @@ Then open:
 | Backend API | http://localhost:8000 |
 | API docs | http://localhost:8000/docs |
 | Health check | http://localhost:8000/api/health |
+
+Useful API routes (Sprint 3):
+
+- `GET /api/exams`
+- `GET /api/exams/upsc/years`
+- `GET /api/exams/upsc/2026/tests`
+- `GET /api/tests/upsc-2026-gs-paper-1`
+- `POST /api/attempts`
+- `PATCH /api/attempts/{attempt_id}/responses`
+- `GET /api/attempts/{attempt_id}`
+- `POST /api/attempts/{attempt_id}/submit`
+- `GET /api/attempts/{attempt_id}/review`
 
 Stop with:
 
