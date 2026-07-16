@@ -1,0 +1,206 @@
+{
+  "id": "upsc-2026-gs-paper-1",
+  "exam": "UPSC Civil Services Examination",
+  "year": 2026,
+  "paper": "General Studies Paper I",
+  "series": "A",
+  "slug": "gs-paper-1",
+  "duration_minutes": 120,
+  "maximum_marks": 200,
+  "total_questions": 5,
+  "questions_for_scoring": 4,
+  "marks_per_correct": 2,
+  "negative_marks": 0.6667,
+  "dropped_question_numbers": [64],
+  "status": "available",
+  "questions": [
+    {
+      "number": 1,
+      "type": "standard_mcq",
+      "stem": "Which one of the following is a characteristic feature of the Indian monsoon?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "It is caused mainly by tropical cyclones in the Bay of Bengal"
+        },
+        {
+          "label": "B",
+          "text": "Rainfall is evenly distributed throughout the year"
+        },
+        {
+          "label": "C",
+          "text": "It is independent of the seasonal reversal of winds"
+        },
+        {
+          "label": "D",
+          "text": "It is marked by a seasonal reversal of wind direction"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false
+    },
+    {
+      "number": 2,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements regarding the Directive Principles of State Policy:",
+      "statements": [
+        {
+          "label": "1",
+          "text": "They are justiciable in nature."
+        },
+        {
+          "label": "2",
+          "text": "They aim to establish a welfare state."
+        },
+        {
+          "label": "3",
+          "text": "They are fundamental in the governance of the country."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false
+    },
+    {
+      "number": 3,
+      "type": "matching_pairs",
+      "stem": "Match the following pairs and select the correct answer using the code given below:",
+      "statements": [],
+      "pairs": [
+        {
+          "left": "1. Chipko Movement",
+          "right": "a. Protection of forests"
+        },
+        {
+          "left": "2. Appiko Movement",
+          "right": "b. Silent Valley"
+        },
+        {
+          "left": "3. Narmada Bachao Andolan",
+          "right": "c. Opposition to large dams"
+        },
+        {
+          "left": "4. Save Silent Valley",
+          "right": "d. Western Ghats of Karnataka"
+        }
+      ],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1-a, 2-b, 3-c, 4-d"
+        },
+        {
+          "label": "B",
+          "text": "1-b, 2-a, 3-d, 4-c"
+        },
+        {
+          "label": "C",
+          "text": "1-a, 2-d, 3-c, 4-b"
+        },
+        {
+          "label": "D",
+          "text": "1-d, 2-c, 3-b, 4-a"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false
+    },
+    {
+      "number": 4,
+      "type": "table_based",
+      "stem": "Based on the table below, which crop requires the longest average growing period among the options?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": {
+        "headers": ["Crop", "Average growing period (days)"],
+        "rows": [
+          ["Rice", "120"],
+          ["Wheat", "140"],
+          ["Cotton", "180"],
+          ["Groundnut", "110"]
+        ]
+      },
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Rice"
+        },
+        {
+          "label": "B",
+          "text": "Cotton"
+        },
+        {
+          "label": "C",
+          "text": "Wheat"
+        },
+        {
+          "label": "D",
+          "text": "Groundnut"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false
+    },
+    {
+      "number": 64,
+      "type": "standard_mcq",
+      "stem": "This question was dropped from evaluation in the official key.",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Option A"
+        },
+        {
+          "label": "B",
+          "text": "Option B"
+        },
+        {
+          "label": "C",
+          "text": "Option C"
+        },
+        {
+          "label": "D",
+          "text": "Option D"
+        }
+      ],
+      "correct_option": null,
+      "is_dropped": true
+    }
+  ]
+}
