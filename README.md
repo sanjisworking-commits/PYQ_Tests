@@ -11,10 +11,11 @@ Completed:
 - Sprint 3: Exams/tests/attempts API with SQLite persistence
 - Sprint 4: Navigation pages (Home → Instructions)
 - Sprint 5: Timed test attempt interface
+- Sprint 6: Results polish + answer review
 
 Next:
 
-- Sprint 6: Results polish + answer review
+- Sprint 7: Personal scores dashboard
 
 ## Quick start
 

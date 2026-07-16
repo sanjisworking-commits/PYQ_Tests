@@ -123,3 +123,24 @@ export type QuestionPaletteStatus =
   | 'marked_for_review'
   | 'answered_marked_for_review'
   | 'dropped'
+
+export type ReviewQuestion = {
+  number: number
+  type: string
+  stem: string
+  is_dropped: boolean
+  selected_option: string | null
+  correct_option: string | null
+  is_correct: boolean | null
+  options: QuestionOption[]
+  statements: QuestionStatement[]
+  pairs: MatchingPair[]
+  lists: MatchingLists | null
+  table: QuestionTable | null
+  case_text: string | null
+}
+
+export type AttemptReview = {
+  attempt: Attempt
+  questions: ReviewQuestion[]
+}
