@@ -1,76 +1,30 @@
-import { useEffect, useState } from 'react'
-
-type HealthResponse = {
-  status: string
-  service: string
-}
-
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') || 'http://localhost:8000'
+import { AppShell } from '../components/layout/AppShell'
+import { Button } from '../components/ui/Button'
 
 export function HomePage() {
-  const [health, setHealth] = useState<HealthResponse | null>(null)
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    let cancelled = false
-
-    async function loadHealth() {
-      try {
-        const response = await fetch(`${API_BASE_URL}/api/health`)
-        if (!response.ok) {
-          throw new Error(`Health check failed (${response.status})`)
-        }
-        const data = (await response.json()) as HealthResponse
-        if (!cancelled) {
-          setHealth(data)
-          setError(null)
-        }
-      } catch (err) {
-        if (!cancelled) {
-          setHealth(null)
-          setError(err instanceof Error ? err.message : 'Unable to reach API')
-        }
-      }
-    }
-
-    void loadHealth()
-    return () => {
-      cancelled = true
-    }
-  }, [])
-
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col justify-center px-6 py-16">
-      <p className="mb-3 text-sm tracking-[0.2em] text-[var(--color-muted)] uppercase">
-        Personal practice
-      </p>
-      <h1 className="text-5xl leading-tight font-semibold text-[var(--color-accent)] sm:text-6xl">
-        PYQ
-      </h1>
-      <p className="mt-4 max-w-xl text-lg text-[var(--color-ink)]/80">
-        UPSC Civil Services Examination previous-year question practice platform.
-        Sprint 1 foundation is running.
-      </p>
-
-      <section className="mt-10 border-t border-[var(--color-ink)]/10 pt-6">
-        <h2 className="text-sm tracking-[0.16em] text-[var(--color-muted)] uppercase">
-          Backend status
-        </h2>
-        {health ? (
-          <p className="mt-2 text-base">
-            Connected to <span className="font-medium">{health.service}</span> (
-            {health.status})
-          </p>
-        ) : (
-          <p className="mt-2 text-base text-red-800">
-            {error ?? 'Checking API health...'}
-          </p>
-        )}
-        <p className="mt-2 text-sm text-[var(--color-muted)]">
-          API base: {API_BASE_URL}
+    <AppShell>
+      <section className="flex min-h-[70vh] flex-col justify-center">
+        <p className="mb-3 text-xs tracking-[0.2em] text-[var(--color-muted)] uppercase">
+          Personal practice
         </p>
+        <h1 className="max-w-xl text-5xl leading-tight font-semibold text-[var(--color-accent)] sm:text-6xl">
+          PYQ
+        </h1>
+        <p className="mt-2 text-2xl text-[var(--color-ink)] sm:text-3xl">
+          UPSC Civil Services Examination
+        </p>
+        <p className="mt-4 max-w-xl text-base text-[var(--color-ink)]/75">
+          Attempt previous-year papers with timed practice, scoring, and review —
+          starting with GS Paper I 2026.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Button to="/upsc/tests">Attempt Tests</Button>
+          <Button to="/upsc" variant="secondary">
+            About UPSC section
+          </Button>
+        </div>
       </section>
-    </main>
+    </AppShell>
   )
 }
