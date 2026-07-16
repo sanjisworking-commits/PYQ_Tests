@@ -1,21 +1,22 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { fetchTest } from '../api/client'
+import { createAttempt, fetchTest } from '../api/client'
 import { AppShell } from '../components/layout/AppShell'
 import { PageHeader } from '../components/layout/PageHeader'
 import { Button } from '../components/ui/Button'
 import { ErrorState } from '../components/ui/ErrorState'
 import { LoadingState } from '../components/ui/LoadingState'
 import type { TestSummary } from '../types/quiz'
+import { saveActiveAttempt } from '../utils/storage'
 
 export function InstructionsPage() {
   const { year, slug } = useParams()
   const navigate = useNavigate()
   const [test, setTest] = useState<TestSummary | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [starting, setStarting] = useState(false)
 
-  const testId =
-    year && slug ? `upsc-${year}-${slug}` : null
+  const testId = year && slug ? `upsc-${year}-${slug}` : null
 
   useEffect(() => {
     let cancelled = false
@@ -45,6 +46,28 @@ export function InstructionsPage() {
       cancelled = true
     }
   }, [testId])
+
+  async function handleBeginTest() {
+    if (!test || !testId) {
+      return
+    }
+
+    setStarting(true)
+    setError(null)
+    try {
+      const attempt = await createAttempt(testId)
+      saveActiveAttempt(testId, {
+        attemptId: attempt.id,
+        expiresAt: attempt.expires_at,
+      })
+      navigate(
+        `/upsc/tests/${test.year}/${test.slug}/attempt?attemptId=${attempt.id}`,
+      )
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start attempt')
+      setStarting(false)
+    }
+  }
 
   return (
     <AppShell>
@@ -90,17 +113,12 @@ export function InstructionsPage() {
             <li>Questions used for scoring: {test.questions_for_scoring}</li>
           </ul>
           <div className="mt-6 rounded-md bg-[var(--color-accent)]/5 px-4 py-3 text-sm text-[var(--color-ink)]/80">
-            The attempt interface arrives in Sprint 5. Begin Test will be wired
-            to create a timed attempt then.
+            Clicking Begin Test creates a timed attempt. Remaining time is restored
+            from the server if you refresh.
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Button
-              type="button"
-              onClick={() => {
-                navigate(`/upsc/tests/${test.year}/${test.slug}/attempt`)
-              }}
-            >
-              Begin Test
+            <Button type="button" onClick={() => void handleBeginTest()} disabled={starting}>
+              {starting ? 'Starting…' : 'Begin Test'}
             </Button>
             <Button to={`/upsc/tests/${test.year}`} variant="secondary">
               Cancel
