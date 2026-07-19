@@ -124,6 +124,19 @@ export function AttemptPage() {
           return
         }
 
+        // Paper data may have been replaced (e.g. sample → full 100Q).
+        // Old attempts cannot be resumed against a different question set.
+        if (
+          attemptDetail.responses.length !== testDetail.questions.length
+        ) {
+          clearActiveAttempt(testId)
+          setError(
+            'This attempt was started with an older question set. Go back to Instructions and click Begin Test to start a fresh attempt.',
+          )
+          setLoading(false)
+          return
+        }
+
         saveActiveAttempt(testId, {
           attemptId: attemptDetail.id,
           expiresAt: attemptDetail.expires_at,
