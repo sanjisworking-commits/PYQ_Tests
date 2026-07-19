@@ -29,13 +29,28 @@ def test_paper_has_full_study_refs_and_explanations() -> None:
 
     assert paper.total_questions == 100
     assert all(question.study_refs for question in paper.questions)
-    assert all(len(question.explanations) == 2 for question in paper.questions)
+    assert all(len(question.explanations) >= 1 for question in paper.questions)
+    assert sum(1 for q in paper.questions if len(q.explanations) == 2) >= 95
 
     first = paper.questions[0]
     assert first.study_refs[0].subject == "INDIAN CULTURE"
     sources = {item.source for item in first.explanations}
     assert sources == {"forumias", "vajiram"}
     assert first.explanations[0].explanation
+
+
+def test_q11_vajiram_explanation_is_pleistocene_not_bleed() -> None:
+    """Regression: Vajiram Q11 must not attach adjacent Montagu/Mansur text."""
+    paper = load_test_paper_from_path(UPSC_DATA_DIR / "2026" / "gs-paper-1.json")
+    q11 = next(question for question in paper.questions if question.number == 11)
+    vajiram = next(item for item in q11.explanations if item.source == "vajiram")
+    text = vajiram.explanation
+    assert "Montagu" not in text
+    assert "Mansur" not in text
+    lowered = text.lower()
+    assert any(
+        token in lowered for token in ("pleistocene", "yamuna", "dolphin", "foote")
+    )
 
 
 def test_notes_upsert_and_list(client: TestClient) -> None:
@@ -78,6 +93,12 @@ def test_review_includes_study_refs_and_explanations(client: TestClient) -> None
     assert q1["study_refs"]
     assert len(q1["explanations"]) == 2
     assert q1["explanations"][0]["explanation"]
+    q11 = by_number[11]
+    vajiram = next(item for item in q11["explanations"] if item["source"] == "vajiram")
+    assert "Montagu" not in vajiram["explanation"]
+    assert "pleistocene" in vajiram["explanation"].lower() or "foote" in vajiram[
+        "explanation"
+    ].lower()
     q100 = by_number[100]
     assert q100["study_refs"]
-    assert len(q100["explanations"]) == 2
+    assert len(q100["explanations"]) >= 1

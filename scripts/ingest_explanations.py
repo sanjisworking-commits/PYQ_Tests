@@ -82,15 +82,28 @@ def parse_forum_bulk(text: str) -> List[ParsedExplanation]:
     return out
 
 
+def strip_vajiram_boilerplate(exp: str) -> str:
+    exp = re.split(r"\nAnswer Key", exp, maxsplit=1)[0]
+    exp = re.split(r"\nV\s*AJIRAM", exp, maxsplit=1, flags=re.I)[0]
+    exp = re.split(r"\nUPSC Preliminary Examination", exp, maxsplit=1, flags=re.I)[0]
+    exp = re.split(r"\nGeneral Studies Paper", exp, maxsplit=1, flags=re.I)[0]
+    exp = re.sub(r"(?i)\bSet-?[ABCD]\b", "", exp)
+    exp = re.sub(r"\n\d{1,3}\s*$", "", exp.strip())
+    return exp.strip()
+
+
 def parse_vajiram(text: str) -> List[ParsedExplanation]:
-    """Parse using Answer/Explanation anchors (PDF text is noisy for number splits)."""
+    """Parse using Answer/Explanation anchors; cut at the next anchor to avoid bleed."""
     anchors = list(
         re.finditer(r"Answer\s*:\s*([a-d])\s*\nExplanation\s*:\s*", text, re.I)
     )
     out: List[ParsedExplanation] = []
     for idx, anchor in enumerate(anchors):
         ans = anchor.group(1).upper()
-        before = text[: anchor.start()]
+        # Only search between previous explanation and this Answer — otherwise
+        # stems like "At the United Nations…" inherit the prior question opener.
+        region_start = anchors[idx - 1].end() if idx > 0 else 0
+        before = text[region_start : anchor.start()]
         opt_matches = list(re.finditer(r"\n\(a\)\s+", before))
         if not opt_matches:
             opt_matches = list(re.finditer(r"\(a\)\s+", before))
@@ -98,42 +111,138 @@ def parse_vajiram(text: str) -> List[ParsedExplanation]:
             continue
         opt_a = opt_matches[-1]
         pre = before[: opt_a.start()]
-        # Prefer real question openers so statement lines like "1. Emergence…"
-        # are not treated as question numbers.
-        q_matches = list(
+        # Prefer strong question openers. Weak openers like "The "/"In " also
+        # match statement lines ("3. The presence of…"), which caused bleed.
+        strong = list(
             re.finditer(
                 r"(?:^|\n)(\d{1,3})\.\s+"
-                r"(?=Which|Consider|With|Match|Among|The |In |"
-                r"How|What |Who |Regarding|Assert|Given|Based|"
-                r"Identify|Select|Of the|According|Why |When |"
-                r"Where |Examine|Discuss|Statement)",
+                r"(?=Which|Consider|With|Match|Among|Regarding|"
+                r"Assert|Given|Based|Identify|Select|Of the|"
+                r"According|Why |When |Where |Examine|Discuss|"
+                r"How|What |Who )",
                 pre,
             )
         )
-        if not q_matches:
-            q_matches = list(re.finditer(r"(?:^|\n)(\d{1,3})\.\s+", pre))
-        if not q_matches:
-            continue
-        q_start = q_matches[-1]
+        if strong:
+            q_start = strong[-1]
+        else:
+            weak = list(
+                re.finditer(
+                    r"(?:^|\n)(\d{1,3})\.\s+(?=The |In |At |During |India |"
+                    r"Under |After |Before |Among |From |For )",
+                    pre,
+                )
+            )
+            if not weak:
+                weak = list(re.finditer(r"(?:^|\n)(\d{1,3})\.\s+", pre))
+            if not weak:
+                continue
+            # Skip short numbered statement lines just above (a)/(b)/(c)/(d).
+            q_start = weak[-1]
+            for cand in reversed(weak):
+                candidate_stem = pre[cand.end() :].strip()
+                if len(re.sub(r"\s+", " ", candidate_stem)) >= 80:
+                    q_start = cand
+                    break
         stem = pre[q_start.end() :].strip()
+        # Drop any leftover previous-explanation bullets before the stem.
+        stem = re.sub(
+            r"^.*?(?=(?:Which|Consider|With|Match|Among|The |In |At |"
+            r"During|India|Under|How|What|Who|Regarding|Assert|Given|"
+            r"Based|Identify|Select|Of the|According)\b)",
+            "",
+            stem,
+            count=1,
+            flags=re.S | re.I,
+        ).strip()
         stem = re.sub(r"\s+", " ", stem)
         if len(stem) < 20 or stem.startswith("("):
             continue
 
         exp_start = anchor.end()
-        rest = text[exp_start:]
+        exp_end = anchors[idx + 1].start() if idx + 1 < len(anchors) else len(text)
+        exp = text[exp_start:exp_end]
+        # Also stop if a new numbered question opener appears before next anchor
         next_q = re.search(
             r"\n\d{1,3}\.\s+(?:Which|Consider|With|Match|Among|The |In |"
-            r"How|Regarding|What |Who |Assert|Given|Based|Identify|Select)",
-            rest,
+            r"At |During |India |How|Regarding|What |Who |Assert|Given|"
+            r"Based|Identify|Select)",
+            exp,
         )
-        exp = rest[: next_q.start()] if next_q else rest
-        # Avoid bleeding into following answer-key tables
-        exp = re.split(r"\nAnswer Key", exp, maxsplit=1)[0]
+        if next_q:
+            exp = exp[: next_q.start()]
+        exp = strip_vajiram_boilerplate(exp)
         exp = clean_exp(exp)
+        # Drop blocks that still look like multi-question bleed
+        if re.search(r"(?i)\bAnswer\s*:\s*[a-d]\b", exp) and "Explanation" in exp:
+            exp = re.split(r"(?i)\bAnswer\s*:\s*[a-d]\b", exp, maxsplit=1)[0].strip()
         if stem and exp and len(exp) > 40:
             out.append(ParsedExplanation(stem=stem, answer=ans, explanation=exp))
     return out
+
+
+_STOPWORDS = {
+    "following",
+    "statements",
+    "consider",
+    "regarding",
+    "reference",
+    "according",
+    "select",
+    "answer",
+    "which",
+    "about",
+    "below",
+    "using",
+    "given",
+    "above",
+    "correct",
+    "incorrect",
+    "option",
+    "statement",
+    "programme",
+    "program",
+    "government",
+    "india",
+    "indian",
+    "economic",
+    "through",
+    "effective",
+    "systems",
+    "system",
+    "presence",
+    "species",
+    "between",
+    "without",
+    "because",
+    "during",
+    "within",
+    "country",
+    "countries",
+    "project",
+    "supported",
+    "international",
+    "national",
+    "development",
+    "important",
+    "provided",
+    "mentioned",
+    "described",
+    "related",
+    "various",
+}
+
+
+def explanation_matches_question(stem: str, explanation: str, extra: str = "") -> bool:
+    """Require distinctive token overlap to reject wrong attachments."""
+    blob = normalize(f"{stem} {extra}")
+    tokens = [t for t in blob.split() if len(t) >= 7 and t not in _STOPWORDS]
+    if not tokens:
+        return True
+    exp_compact = compact(explanation)
+    hits = sum(1 for t in tokens[:14] if t in exp_compact)
+    strong = sum(1 for t in tokens[:14] if len(t) >= 9 and t in exp_compact)
+    return hits >= 2 or strong >= 1
 
 
 def stem_key(stem: str) -> str:
@@ -164,6 +273,15 @@ def best_match(
     candidates: List[ParsedExplanation],
     extra_text: str = "",
 ) -> Optional[ParsedExplanation]:
+    match = best_match_scored(target_stem, candidates, extra_text=extra_text)
+    return match[0] if match else None
+
+
+def best_match_scored(
+    target_stem: str,
+    candidates: List[ParsedExplanation],
+    extra_text: str = "",
+) -> Optional[Tuple[ParsedExplanation, float]]:
     blob = f"{target_stem}\n{extra_text}".strip()
     target_norm = normalize(blob)
     target_compact = compact(blob)
@@ -173,27 +291,16 @@ def best_match(
     distinctive = [
         t
         for t in normalize(blob).split()
-        if len(t) >= 8
-        and t
-        not in {
-            "following",
-            "statements",
-            "consider",
-            "regarding",
-            "reference",
-            "according",
-            "select",
-            "answer",
-        }
+        if len(t) >= 8 and t not in _STOPWORDS
     ][:6]
 
     best: Optional[ParsedExplanation] = None
     best_score = 0.0
     for cand in candidates:
         cand_norm = normalize(cand.stem)
-        if not cand_norm:
+        if not cand_norm or cand_norm.startswith("select the answer"):
             continue
-        cand_compact = compact(cand.stem)
+        cand_compact = compact(cand.stem + " " + cand.explanation[:280])
         cand_head = " ".join(cand_norm.split()[:18])
         if target_head and (
             target_head in cand_norm
@@ -201,12 +308,12 @@ def best_match(
             or normalize(target_stem)[:60] in cand_norm
             or cand_norm[:60] in normalize(target_stem)
         ):
-            return cand
-        # OCR-tolerant: distinctive token appears in compacted candidate stem
+            return cand, 1.0
+        # OCR-tolerant: distinctive token appears in compacted candidate
         hit = sum(1 for t in distinctive if t in cand_compact)
         key = stem_key(cand.stem)
-        tset = set(target_key.split())
-        cset = set(key.split())
+        tset = set(target_key.split()) - _STOPWORDS
+        cset = set(key.split()) - _STOPWORDS
         score = 0.0
         if tset and cset:
             score = len(tset & cset) / max(len(tset), len(cset))
@@ -215,6 +322,8 @@ def best_match(
         for t in distinctive:
             if len(t) >= 9 and t in cand_compact:
                 score += 0.4
+            if len(t) >= 9 and t in compact(cand.explanation):
+                score += 0.25
         if target_key.split()[:5] == key.split()[:5]:
             score += 0.35
         if target_head.split()[:4] == cand_head.split()[:4]:
@@ -222,8 +331,8 @@ def best_match(
         if score > best_score:
             best_score = score
             best = cand
-    if best_score >= 0.45:
-        return best
+    if best is not None and best_score >= 0.45:
+        return best, best_score
     return None
 
 
@@ -414,37 +523,62 @@ def main() -> None:
     unmatched_vaj: List[int] = []
     mapped_refs = 0
 
+    rejected_forum = 0
+    rejected_vaj = 0
+
     for q in paper["questions"]:
         stem = q["stem"]
         extra = q.get("case_text") or ""
         # Include statement text for matching multi-part stems.
         if q.get("statements"):
             extra += " " + " ".join(s.get("text", "") for s in q["statements"])
-        forum = best_match(stem, forum_items, extra_text=extra)
-        vaj = best_match(stem, vaj_items, extra_text=extra)
+        forum_hit = best_match_scored(stem, forum_items, extra_text=extra)
+        vaj_hit = best_match_scored(stem, vaj_items, extra_text=extra)
         explanations = []
-        if forum:
-            explanations.append(
-                {
-                    "source": "forumias",
-                    "source_label": "ForumIAS",
-                    "source_answer": forum.answer,
-                    "explanation": forum.explanation,
-                    "source_url": FORUM_URL_BULK,
-                }
-            )
+        if forum_hit:
+            forum, forum_score = forum_hit
+            if forum_score >= 0.7 or explanation_matches_question(
+                stem, forum.explanation, extra
+            ):
+                explanations.append(
+                    {
+                        "source": "forumias",
+                        "source_label": "ForumIAS",
+                        "source_answer": forum.answer,
+                        "explanation": forum.explanation,
+                        "source_url": FORUM_URL_BULK,
+                    }
+                )
+            else:
+                rejected_forum += 1
+                print(
+                    f"Rejected ForumIAS match for Q{q['number']}: "
+                    f"explanation failed stem sanity check (score={forum_score:.2f})"
+                )
+                unmatched_forum.append(q["number"])
         else:
             unmatched_forum.append(q["number"])
-        if vaj:
-            explanations.append(
-                {
-                    "source": "vajiram",
-                    "source_label": "Vajiram & Ravi",
-                    "source_answer": vaj.answer,
-                    "explanation": vaj.explanation,
-                    "source_url": VAJIRAM_URL,
-                }
-            )
+        if vaj_hit:
+            vaj, vaj_score = vaj_hit
+            if vaj_score >= 0.7 or explanation_matches_question(
+                stem, vaj.explanation, extra
+            ):
+                explanations.append(
+                    {
+                        "source": "vajiram",
+                        "source_label": "Vajiram & Ravi",
+                        "source_answer": vaj.answer,
+                        "explanation": vaj.explanation,
+                        "source_url": VAJIRAM_URL,
+                    }
+                )
+            else:
+                rejected_vaj += 1
+                print(
+                    f"Rejected Vajiram match for Q{q['number']}: "
+                    f"explanation failed stem sanity check (score={vaj_score:.2f})"
+                )
+                unmatched_vaj.append(q["number"])
         else:
             unmatched_vaj.append(q["number"])
 
@@ -454,6 +588,9 @@ def main() -> None:
             syllabus,
             case_text=q.get("case_text") or "",
         )
+        # Preserve previously curated study_refs when keyword mapping finds nothing.
+        if not refs and q.get("study_refs"):
+            refs = q["study_refs"]
         if refs:
             mapped_refs += 1
         q["study_refs"] = refs
@@ -466,6 +603,7 @@ def main() -> None:
     print(f"study_refs filled: {mapped_refs}/100")
     print(f"forum unmatched ({len(unmatched_forum)}): {unmatched_forum}")
     print(f"vajiram unmatched ({len(unmatched_vaj)}): {unmatched_vaj}")
+    print(f"rejected sanity forum={rejected_forum} vajiram={rejected_vaj}")
 
 
 if __name__ == "__main__":

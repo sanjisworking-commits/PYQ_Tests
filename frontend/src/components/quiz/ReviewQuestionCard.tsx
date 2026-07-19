@@ -110,6 +110,7 @@ export function ReviewQuestionCard({
 
       <StudyRefsList refs={question.study_refs ?? []} />
       <SourceExplanationPanel
+        key={question.number}
         explanations={question.explanations ?? []}
         officialAnswer={question.correct_option}
       />

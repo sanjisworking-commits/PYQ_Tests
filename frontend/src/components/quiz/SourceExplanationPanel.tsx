@@ -1,17 +1,94 @@
 import { useState } from 'react'
 import type { SourceExplanation } from '../../types/quiz'
+import {
+  parseExplanation,
+  type ExplanationBlock,
+} from '../../utils/explanationFormat'
 
 type SourceExplanationPanelProps = {
   explanations: SourceExplanation[]
   officialAnswer: string | null
 }
 
+function VerdictChip({ verdict }: { verdict: 'correct' | 'incorrect' }) {
+  const isCorrect = verdict === 'correct'
+  return (
+    <span
+      className={
+        isCorrect
+          ? 'rounded px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-emerald-800 bg-emerald-50'
+          : 'rounded px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-red-800 bg-red-50'
+      }
+    >
+      {isCorrect ? 'Correct' : 'Incorrect'}
+    </span>
+  )
+}
+
+function ExplanationBlocks({ text }: { text: string }) {
+  const blocks = parseExplanation(text)
+
+  if (blocks.length === 0) {
+    return (
+      <p className="whitespace-pre-wrap text-sm leading-relaxed text-[var(--color-ink)]/90">
+        {text}
+      </p>
+    )
+  }
+
+  return (
+    <div className="space-y-3">
+      {blocks.map((block, index) => (
+        <ExplanationBlockView key={`${block.kind}-${index}`} block={block} />
+      ))}
+    </div>
+  )
+}
+
+function ExplanationBlockView({ block }: { block: ExplanationBlock }) {
+  if (block.kind === 'paragraph') {
+    return (
+      <p className="text-sm leading-relaxed text-[var(--color-ink)]/90">
+        {block.text}
+      </p>
+    )
+  }
+
+  if (block.kind === 'bullets') {
+    return (
+      <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-[var(--color-ink)]/90">
+        {block.items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    )
+  }
+
+  return (
+    <div className="rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-2.5">
+      <div className="mb-1.5 flex flex-wrap items-center gap-2">
+        <span className="text-sm font-semibold text-[var(--color-ink)]">
+          {block.label}
+        </span>
+        <VerdictChip verdict={block.verdict} />
+      </div>
+      {block.body ? (
+        <p className="text-sm leading-relaxed text-[var(--color-ink)]/90">
+          {block.body}
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
 export function SourceExplanationPanel({
   explanations,
   officialAnswer,
 }: SourceExplanationPanelProps) {
-  const [openSource, setOpenSource] = useState<string | null>(
-    explanations[0]?.source ?? null,
+  const preferred =
+    explanations.find((item) => item.source === 'forumias') ?? explanations[0]
+  const [activeSource, setActiveSource] = useState<string | null>(
+    preferred?.source ?? null,
   )
 
   if (explanations.length === 0) {
@@ -27,70 +104,75 @@ export function SourceExplanationPanel({
     )
   }
 
-  return (
-    <section className="mt-4 space-y-2">
-      <h3 className="text-sm font-semibold text-[var(--color-ink)]">
-        Answer analysis
-      </h3>
-      {explanations.map((item) => {
-        const isOpen = openSource === item.source
-        const disagrees =
-          item.source_answer &&
-          officialAnswer &&
-          item.source_answer !== officialAnswer
+  const active =
+    explanations.find((item) => item.source === activeSource) ?? explanations[0]
+  const disagrees =
+    active.source_answer &&
+    officialAnswer &&
+    active.source_answer !== officialAnswer
 
-        return (
-          <div
-            key={item.source}
-            className="rounded-md border border-[var(--color-ink)]/10 bg-white/60"
-          >
-            <button
-              type="button"
-              className="flex w-full items-center justify-between gap-3 px-3 py-2.5 text-left text-sm font-medium text-[var(--color-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
-              aria-expanded={isOpen}
-              onClick={() =>
-                setOpenSource(isOpen ? null : item.source)
-              }
+  return (
+    <section className="mt-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--color-ink)]/10 px-3 py-2.5">
+        <h3 className="text-sm font-semibold text-[var(--color-ink)]">
+          Answer analysis
+        </h3>
+        <div
+          className="flex rounded-md border border-[var(--color-ink)]/10 p-0.5"
+          role="tablist"
+          aria-label="Explanation source"
+        >
+          {explanations.map((item) => {
+            const selected = item.source === active.source
+            return (
+              <button
+                key={item.source}
+                type="button"
+                role="tab"
+                aria-selected={selected}
+                className={
+                  selected
+                    ? 'rounded px-2.5 py-1 text-xs font-semibold text-[var(--color-ink)] bg-[var(--color-ink)]/8'
+                    : 'rounded px-2.5 py-1 text-xs font-medium text-[var(--color-muted)] hover:text-[var(--color-ink)]'
+                }
+                onClick={() => setActiveSource(item.source)}
+              >
+                {item.source_label}
+              </button>
+            )
+          })}
+        </div>
+      </div>
+
+      <div className="px-3 py-3" role="tabpanel">
+        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
+          {active.source_answer ? (
+            <span className="rounded bg-[var(--color-ink)]/5 px-2 py-0.5 font-medium">
+              Institute answer: {active.source_answer}
+            </span>
+          ) : null}
+          {disagrees ? (
+            <span className="rounded bg-amber-50 px-2 py-0.5 font-medium text-amber-900">
+              Differs from official key ({officialAnswer})
+            </span>
+          ) : null}
+        </div>
+
+        <ExplanationBlocks text={active.explanation} />
+
+        {active.source_url ? (
+          <p className="mt-3 text-xs">
+            <a
+              href={active.source_url}
+              target="_blank"
+              rel="noreferrer"
+              className="text-[var(--color-accent)] underline-offset-2 hover:underline"
             >
-              <span>{item.source_label}</span>
-              <span className="text-xs font-normal text-[var(--color-muted)]">
-                {isOpen ? 'Hide' : 'Show'}
-              </span>
-            </button>
-            {isOpen ? (
-              <div className="border-t border-[var(--color-ink)]/10 px-3 py-3">
-                <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
-                  {item.source_answer ? (
-                    <span className="rounded bg-[var(--color-ink)]/5 px-2 py-0.5 font-medium">
-                      Institute answer: {item.source_answer}
-                    </span>
-                  ) : null}
-                  {disagrees ? (
-                    <span className="rounded bg-amber-50 px-2 py-0.5 font-medium text-amber-900">
-                      Differs from official key ({officialAnswer})
-                    </span>
-                  ) : null}
-                </div>
-                <p className="whitespace-pre-wrap text-sm leading-relaxed text-[var(--color-ink)]/90">
-                  {item.explanation}
-                </p>
-                {item.source_url ? (
-                  <p className="mt-2 text-xs">
-                    <a
-                      href={item.source_url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-[var(--color-accent)] underline-offset-2 hover:underline"
-                    >
-                      View original source
-                    </a>
-                  </p>
-                ) : null}
-              </div>
-            ) : null}
-          </div>
-        )
-      })}
+              View original source
+            </a>
+          </p>
+        ) : null}
+      </div>
     </section>
   )
 }
