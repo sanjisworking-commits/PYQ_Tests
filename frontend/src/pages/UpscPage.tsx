@@ -13,7 +13,7 @@ export function UpscPage() {
       <div className="max-w-2xl space-y-4 text-[var(--color-ink)]/80">
         <p>
           First available paper: <strong>2026 General Studies Paper I</strong>{' '}
-          (Series A sample set for platform validation).
+          (Series A — full 100-question set).
         </p>
         <p>
           Later years are listed as Coming Soon until their question data is added.

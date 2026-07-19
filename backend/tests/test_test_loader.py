@@ -29,17 +29,22 @@ def test_load_sample_test_json_file() -> None:
     assert paper.year == 2026
     assert paper.paper == "General Studies Paper I"
     assert paper.series == "A"
-    assert paper.total_questions == 5
-    assert paper.questions_for_scoring == 4
+    assert paper.total_questions == 100
+    assert paper.questions_for_scoring == 99
     assert paper.maximum_marks == 200
     assert paper.negative_marks == 0.6667
     assert paper.dropped_question_numbers == [64]
+    assert [question.number for question in paper.questions] == list(range(1, 101))
 
     types = {question.number: question.type.value for question in paper.questions}
     assert types[1] == "standard_mcq"
-    assert types[2] == "multiple_statements"
-    assert types[3] == "matching_pairs"
-    assert types[4] == "table_based"
+    assert types[3] == "multiple_statements"
+    assert types[67] == "matching_lists"
+    assert types[98] == "table_based"
+
+    first = paper.questions[0]
+    assert "Carnatic" in first.stem
+    assert first.correct_option == "D"
 
     dropped = next(question for question in paper.questions if question.number == 64)
     assert dropped.is_dropped is True

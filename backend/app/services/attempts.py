@@ -248,6 +248,12 @@ def build_review_payload(db: Session, attempt_id: str) -> Dict[str, object]:
                     else None
                 ),
                 "case_text": question.case_text,
+                "study_refs": [
+                    ref.model_dump(mode="json") for ref in question.study_refs
+                ],
+                "explanations": [
+                    item.model_dump(mode="json") for item in question.explanations
+                ],
             }
         )
 

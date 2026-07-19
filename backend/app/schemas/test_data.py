@@ -72,6 +72,43 @@ class QuestionTable(BaseModel):
     rows: List[List[str]] = Field(default_factory=list)
 
 
+class StudyRef(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    subject: str
+    topic: str
+    subtopic: str
+    ncert_hint: Optional[str] = None
+
+
+class SourceExplanation(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    source: str
+    source_label: str
+    source_answer: Optional[str] = None
+    explanation: str
+    source_url: Optional[str] = None
+
+    @field_validator("source")
+    @classmethod
+    def validate_source(cls, value: str) -> str:
+        normalized = value.strip().lower()
+        if normalized not in {"forumias", "vajiram"}:
+            raise ValueError("source must be forumias or vajiram")
+        return normalized
+
+    @field_validator("source_answer")
+    @classmethod
+    def validate_source_answer(cls, value: Optional[str]) -> Optional[str]:
+        if value is None:
+            return None
+        normalized = value.strip().upper()
+        if normalized not in {"A", "B", "C", "D"}:
+            raise ValueError("source_answer must be one of A, B, C, D")
+        return normalized
+
+
 class Question(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -86,6 +123,8 @@ class Question(BaseModel):
     options: List[Option]
     correct_option: Optional[str] = None
     is_dropped: bool = False
+    study_refs: List[StudyRef] = Field(default_factory=list)
+    explanations: List[SourceExplanation] = Field(default_factory=list)
 
     @field_validator("correct_option")
     @classmethod
@@ -178,7 +217,9 @@ class ScoreResult(BaseModel):
 
 
 def question_to_public_dict(question: Question) -> Dict[str, Any]:
-    """Serialize a question without revealing the answer key."""
+    """Serialize a question without revealing the answer key or explanations."""
     payload = question.model_dump(mode="json")
     payload.pop("correct_option", None)
+    # Keep study_refs for attempt UI; hide coaching explanations until review.
+    payload.pop("explanations", None)
     return payload

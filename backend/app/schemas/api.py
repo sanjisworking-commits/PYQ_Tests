@@ -117,6 +117,25 @@ class AttemptOut(BaseModel):
         return to_utc_iso(value)
 
 
+class StudyRefOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    subject: str
+    topic: str
+    subtopic: str
+    ncert_hint: Optional[str] = None
+
+
+class SourceExplanationOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    source: str
+    source_label: str
+    source_answer: Optional[str] = None
+    explanation: str
+    source_url: Optional[str] = None
+
+
 class ReviewQuestionOut(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -133,6 +152,29 @@ class ReviewQuestionOut(BaseModel):
     lists: Optional[Dict[str, Any]]
     table: Optional[Dict[str, Any]]
     case_text: Optional[str]
+    study_refs: List[StudyRefOut] = Field(default_factory=list)
+    explanations: List[SourceExplanationOut] = Field(default_factory=list)
+
+
+class QuestionNoteOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    test_id: str
+    question_number: int
+    body: str
+    updated_at: datetime
+
+    @field_serializer("updated_at")
+    def serialize_updated_at(self, value: datetime) -> str:
+        serialized = to_utc_iso(value)
+        assert serialized is not None
+        return serialized
+
+
+class UpsertQuestionNoteRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    body: str = Field(default="", max_length=20000)
 
 
 class ReviewOut(BaseModel):

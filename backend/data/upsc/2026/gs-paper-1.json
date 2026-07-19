@@ -7,17 +7,19 @@
   "slug": "gs-paper-1",
   "duration_minutes": 120,
   "maximum_marks": 200,
-  "total_questions": 5,
-  "questions_for_scoring": 4,
+  "total_questions": 100,
+  "questions_for_scoring": 99,
   "marks_per_correct": 2,
   "negative_marks": 0.6667,
-  "dropped_question_numbers": [64],
+  "dropped_question_numbers": [
+    64
+  ],
   "status": "available",
   "questions": [
     {
       "number": 1,
       "type": "standard_mcq",
-      "stem": "Which one of the following is a characteristic feature of the Indian monsoon?",
+      "stem": "Which one of the following Carnatic music ragas is similar to Raga Bilawal in Hindustani music ?",
       "statements": [],
       "pairs": [],
       "lists": null,
@@ -26,40 +28,782 @@
       "options": [
         {
           "label": "A",
-          "text": "It is caused mainly by tropical cyclones in the Bay of Bengal"
+          "text": "Nat Bhairavi"
         },
         {
           "label": "B",
-          "text": "Rainfall is evenly distributed throughout the year"
+          "text": "Kamavardhini"
         },
         {
           "label": "C",
-          "text": "It is independent of the seasonal reversal of winds"
+          "text": "Hanumatodi"
         },
         {
           "label": "D",
-          "text": "It is marked by a seasonal reversal of wind direction"
+          "text": "Dheera Shankarabharanam"
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "INDIAN CULTURE",
+          "topic": "Music in India",
+          "subtopic": "Forms of Indian Music",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "D",
+          "explanation": "Indian national anthem Jana Gana Mana is based on the Carnatic raga Dheera Shankarabharanam, which corresponds to Raga Bilawal in Hindustani music . Shankarabharanam means ‘the ornament of Shiva’ and is considered a healing raga in music therapy. It is cherished as a favourite of Lord Shiva who is the Vaidishwar or god of doctors, and is said to produce a feeling of empowerment and well-being in listeners.",
+          "source_url": "https://forumias.com/blog/question/which-one-of-the-following-carnatic-music-ragas-is-similar-to-raga-bilawal-in-hindustani-music/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "D",
+          "explanation": "Carnatic music and Hindustani classical music often have corresponding ragas with similar note structures though \nthey may differ in style and presentation.\n- The Hindustani Raga Bilawal corresponds to Dheera Shankarabharanam in Carnatic music. Both \nare based on the natural major scale and use all seven shuddha (natural) notes: Sa, Re, Ga, Ma, Pa, Dha, Ni\n- Dheera Shankarabharanam is the 29th Melakarta raga in Carnatic music and is one of the most important \nand foundational ragas in the Carnatic tradition. \n- The other ragas mentioned correspond to different Hindustani ragas:\n- Nat Bhairavi resembles Asavari\n- Kamavardhini corresponds to Puriya Dhanashree\n- Hanumatodi corresponds to Todi\nTherefore, option (d) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
     },
     {
       "number": 2,
+      "type": "standard_mcq",
+      "stem": "The artificially fixed rupee-sterling exchange rate prescribed by the Hilton-Young Commission (1926) was adopted by the British Government for which one of the following reasons ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Aiding the flow of remittances from India and maintaining India's creditworthiness"
+        },
+        {
+          "label": "B",
+          "text": "Providing support to Indian importers"
+        },
+        {
+          "label": "C",
+          "text": "Encouraging export of cotton produce from India"
+        },
+        {
+          "label": "D",
+          "text": "Preventing depreciation of the Rupee in terms of gold"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "MODERN HISTORY",
+          "topic": "Scenario before 1857",
+          "subtopic": "The British conquest of India",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "A",
+          "explanation": "The artificially fixed rupee-sterling exchange rate at 1s 6d was prescribed by the Hilton-Young Commission and adopted by the British government “to aid the flow of remittances from India and to maintain India’s credit-worthiness.” Under colonial rule, Britain regularly transferred large amounts of money from India in the form of administrative expenses, pensions, debt payments, and profits. A stable exchange rate ensured smooth remittances to Britain and protected India’s reputation in international financial markets.",
+          "source_url": "https://forumias.com/blog/question/the-artificially-fixed-rupee-sterling-exchange-rate-prescribed-by-the-hilton-young-commission-1926-was-adopted-by-the-british-government-for-which-one-of-the-following-reasons/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "A",
+          "explanation": "The Hilton-Young Commission (Royal Commission on Indian Currency and Finance, 1926) recommended an \nartificially fixed rupee-sterling exchange rate under a gold-bullion standard system. The British Government \nadopted this policy mainly to protect imperial financial interests.\nV AJIRAM & RA VI\n8\nUPSC Preliminary Examination, 2026\nGeneral Studies Paper I – Set-D\n- The rupee was pegged at 1 shilling and 6 pence sterling , which kept the rupee artificially overvalued. \nThis arrangement primarily helped the British Government in ensuring smooth transfer of Home Charges \nfrom India to Britain. These payments included pensions of British officials, debt servicing, military \nexpenditures, and administrative remittances.\n- The policy also helped maintain India’s creditworthiness in London financial markets , thereby \nsafeguarding British financial confidence in colonial India. \nTherefore, option (a) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
+    },
+    {
+      "number": 3,
       "type": "multiple_statements",
-      "stem": "Consider the following statements regarding the Directive Principles of State Policy:",
+      "stem": "Consider the following statements :\nI. Pali texts contain the first definite references to coins, e.g., kahapana, nikkha, kamsa, and kakanika.\nII. The literary evidence from Pali texts is corroborated by archaeological evidence of punch-marked coins from many sites, most of them made of silver.\nThe above statements have been associated with which of the following ?\nSelect the answer using the code given below :",
       "statements": [
         {
           "label": "1",
-          "text": "They are justiciable in nature."
+          "text": "Emergence of urban life"
         },
         {
           "label": "2",
-          "text": "They aim to establish a welfare state."
+          "text": "Transition to money economy"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "ANCIENT HISTORY",
+          "topic": "Pre Mauryan-Period",
+          "subtopic": "Evolution of Coins",
+          "ncert_hint": null
+        },
+        {
+          "subject": "ANCIENT HISTORY",
+          "topic": "Pre Mauryan-Period",
+          "subtopic": "Rise of urban centres",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "C",
+          "explanation": "Statement 1 is correct. Pali texts referred to several types of coins, which indicates the existence of active trade and commercial exchange . The archaeological discoveries of punch-marked coins from many sites suggest the use of coins which encouraged trade, markets, specialised occupations, and exchange of goods over long distances. Such expanding commercial activities generally developed in urban centres.  \n Statement 2 is correct. T he mention of coins such as kahapana, nikkha, kamsa, and kakanika in pali texts , along with the archaeological discovery of punch-marked coins, shows increasing use of metallic currency in economic transactions. These developments reflect a shift away from barter exchange towards a money economy.",
+          "source_url": "https://forumias.com/blog/download-official-upsc-2026-answer-key-forumias/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "C",
+          "explanation": "The emergence of coinage was an important feature of early urbanization and the growth of trade in ancient India.\n- Pali texts contain the first definite references to coins such as kahapana, nikkha, kamsa, pada, \nmasaka, and kakanika. Archaeological evidence from many sites has also yielded punch-marked coins, \nmost of them made of silver, confirming the literary references.\n- The beginning of coined money around the 6th–5th centuries BCE marked a major change in economic \ntransactions. It promoted long-distance trade, expanding markets, and increasing commercialization. The \nuse of money also led to the rise of money-lending, instruments of credit, and banking practices. So, \nstatement 2 is correct.\n- At the same time, the spread of coinage was closely linked with the emergence of urban life in the age \nof Mahajanapadas. Urban centres required more sophisticated systems of trade and exchange, which \ncoinage helped facilitate. So, statement 1 is correct.\nTherefore, option (c) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "type": "multiple_statements",
+      "stem": "Which of the following temples has/have a Nagara-style shikhara ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Malegitti Shivalaya, Badami"
+        },
+        {
+          "label": "2",
+          "text": "Huchimalligudi Temple, Aihole"
         },
         {
           "label": "3",
-          "text": "They are fundamental in the governance of the country."
+          "text": "Dashavatara Temple, Deogarh"
+        },
+        {
+          "label": "4",
+          "text": "Virupaksha Temple, Pattadakal"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3"
+        },
+        {
+          "label": "C",
+          "text": "3 only"
+        },
+        {
+          "label": "D",
+          "text": "3 and 4"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "ARCHITECTURE",
+          "topic": "General",
+          "subtopic": "Indian Temple Architecture-Enduring Legacy of cultural heritage and architectural magnificence",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "B",
+          "explanation": "Statement 1 is incorrect. Malegitti Shivalaya of Badami has garbhagriha, pillared Mandapa which is accessed through mukhamandapa. The temple is roofed with Dravidian shikhara.   \n Statement 2 is correct. The Huchimalligudi Temple is an important example of experimentation in temple architecture during the Early Chalukyan age. It signifies the development of the R ekha-prasada type of shikhara , which is a characteristic feature of the Nagara style prevalent in northern and central India. Thus, this temple represents an early form of Nagara-style shikhara\n Statement 3 is correct. The Dashavatara Temple belongs to the Gupta period and is one of the earliest temples associated with the evolution of the shikhara . The presence of curving latina or rekha-prasada type of shikhara also makes it clear that this is an early example of a classic nagara style of temple.\n Statement 4 is incorrect. The Virupaksha Temple is predominantly a Dravidian-style temple. Although Pattadakal contains examples of both northern and southern architectural traditions, the Virupaksha Temple itself is mainly based on the Dravidian vimana style and not on the Nagara style.",
+          "source_url": "https://forumias.com/blog/download-official-upsc-2026-answer-key-forumias/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "B",
+          "explanation": "Indian temple architecture developed mainly into the Nagara, Dravida, and Vesara styles. The Nagara style is \ncharacterized by a curvilinear shikhara and became prominent in northern India.\n- The Dashavatara Temple is one of the earliest and most important examples of the Nagara style in \nnorthern India. So, point 3 is correct.\n- The Huchimalligudi Temple belongs to the early Chalukyan tradition at Aihole and the temple is \nassociated with Nagara-style shikhara features. So, point 2 is correct.\n- The Malegitti Shivalaya have an octagonal Dravidian shikhara crowned by a dome. So, point 1 is not \ncorrect.\n- The Virupaksha Temple at Pattadakal is a prominent example of the Dravidian style. So, point 4 is not \ncorrect.\nTherefore, option (b) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "type": "standard_mcq",
+      "stem": "Among the four main forms of existence of life recognized in Jainism, which one of the following is not included ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Deva (gods)"
+        },
+        {
+          "label": "B",
+          "text": "Yaksha (demi-gods)"
+        },
+        {
+          "label": "C",
+          "text": "Manushya (humans)"
+        },
+        {
+          "label": "D",
+          "text": "Tiryancha (animals and plants)"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "ANCIENT HISTORY",
+          "topic": "Pre Mauryan-Period",
+          "subtopic": "Jainism",
+          "ncert_hint": null
+        },
+        {
+          "subject": "RELIGION AND PHILOSOPHY",
+          "topic": "General",
+          "subtopic": "Rise of heterodox Sects- Buddhism, Jainism and Ajivikas",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "B",
+          "explanation": "Jainism classifies rebirth into four principal forms of existence ( Gati ) based on one’s karma. These are Human beings, Heavenly beings, Tiryancha beings, and Infernal beings. \n Option a is correct. Deva or heavenly beings are one of the four recognised forms of existence in Jainism. They enjoy heavenly pleasures due to good karmas but still remain within the cycle of rebirth.\n Option b is incorrect. Yakshas are semi-divine attendant deities in Jain tradition, but they are not included among the four principal Gatis . \n Option c is correct. Human beings are one of the four forms of existence and are considered most suitable for spiritual progress and attainment of liberation.\n Option d is correct. Tiryancha i ncludes animals, birds, insects, and plants. These are recognised as one of the four forms of existence in Jainism.",
+          "source_url": "https://forumias.com/blog/download-official-upsc-2026-answer-key-forumias/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "B",
+          "explanation": "Jainism is an ancient Indian religious tradition associated with Mahavira, a contemporary of the Buddha. \nAccording to Jain philosophy, life exists in four main forms of existence:\n- Deva – gods\n- Manushya – humans\n- Naraka/Naraki – hell beings\n- Tiryancha – animals and plants\n- The Jain doctrine further classifies living beings on the basis of their sense faculties, ranging from one-\nsensed organisms to more complex life forms.\n- The term Yaksha refers to semi-divine or attendant deities in Indian religious traditions, but it is not one \nof the four principal forms of existence recognized in Jainism.\nTherefore, option (b) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "type": "standard_mcq",
+      "stem": "The Hallisalasya painting in the Bagh Caves represents :",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "A joyous folk dance"
+        },
+        {
+          "label": "B",
+          "text": "Buddha in a meditative pose"
+        },
+        {
+          "label": "C",
+          "text": "The depiction of Shiva and Parvati on Kailasha"
+        },
+        {
+          "label": "D",
+          "text": "Samudramanthan (Churning of the Ocean)"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 7,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements relating to the use of the place-value system in India :\nWhich of the statements given above are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The earliest epigraphic use of the place-value system in India is found in the Mankani plates from Gujarat (AD 595 – 596)."
+        },
+        {
+          "label": "2",
+          "text": "In the ninth century, place-values become general in inscriptions all over India."
+        },
+        {
+          "label": "3",
+          "text": "The place-values have been found in Sanskrit inscriptions in South-east Asia as early as the seventh century."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 8,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about the archaeological findings in Harappan towns :\nI. There is wide occurrence of spindle-whorls in the houses but absence of spinning wheels.\nII. Weights and measurement scales, complete with graduations have been discovered.\nIII. There are houses built in large part with baked bricks, around relatively spacious courtyards, with their own wells, bathing platforms, and large rooms.\nWhich of the following inferences can be drawn from the above statements ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Statement I suggests that spinning was a laborious activity done at home."
+        },
+        {
+          "label": "2",
+          "text": "Statement II suggests the extent of the scientific knowledge that the Harappans possessed."
+        },
+        {
+          "label": "3",
+          "text": "Statement III suggests the emergence of a common property system."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 9,
+      "type": "standard_mcq",
+      "stem": "Which one of the following statements about the Eka Movement and Bardoli Satyagraha is correct ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "The Eka Movement was throughout supported and organized by the Congress while Bardoli Satyagraha was initially independent of Congress influence and was only in the last stages supported by the Congress."
+        },
+        {
+          "label": "B",
+          "text": "The Eka Movement was provided leadership by the taluqdars of Awadh, whereas the Bardoli Satyagraha was a movement of the landless labourers."
+        },
+        {
+          "label": "C",
+          "text": "The Bardoli Satyagraha was a campaign against the enhancement of land revenue, while the Eka Movement was a protest against excessive extraction of rents."
+        },
+        {
+          "label": "D",
+          "text": "The Eka Movement was located in the Varanasi and Mirzapur districts of the present-day U.P., while the Bardoli Satyagraha took place in Saurashtra."
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 10,
+      "type": "assertion_support",
+      "stem": "Consider the following statements about the Rigvedic period :\nI. Irrigation from wells allowed agriculture to expand away from flood plains and strips on river margins into the present Punjab and Haryana plains having underground water levels reasonably close to the surface.\nII. Draught-animal power was employed to draw up water out of the wells.\nWhich of the following information support/supports the above statements ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "There is evidence in the Rigveda of the use of ashma chakra (stone pulley wheel) and ahava (strapped wooden pails) to draw up water."
+        },
+        {
+          "label": "2",
+          "text": "Mention has been made in the Rigveda of the use of implements like parashu/kulisha (axe) and datra / sreni (sickle)."
+        },
+        {
+          "label": "3",
+          "text": "There is a history of the use of ox, even before the Rigveda, for ploughing the land and pulling the carts."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 11,
+      "type": "assertion_support",
+      "stem": "Consider the following assertion :\nIn the Pleistocene period either the Yamuna once flowed into the Indus, or the Sutlej flowed into the Yamuna and one major tributary of either had shifted from the Ganga to the Indus or vice versa.\nWhich of the following is/are the basis of the above assertion ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The Nadi-Sukta of the Rigveda"
+        },
+        {
+          "label": "2",
+          "text": "The explorations of the Sutlej and the Yamuna by Robert Bruce Foote"
+        },
+        {
+          "label": "3",
+          "text": "The presence of the same species of dolphins in both the Indus and the Ganga river systems"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 12,
+      "type": "standard_mcq",
+      "stem": "What does an empty seat represent in early Buddhist iconography ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "The meditation of the Buddha"
+        },
+        {
+          "label": "B",
+          "text": "The Buddha's First Sermon"
+        },
+        {
+          "label": "C",
+          "text": "The Buddha's Mahaparinibbana"
+        },
+        {
+          "label": "D",
+          "text": "The Buddha's Mahabhinishkramana"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 13,
+      "type": "matching_pairs",
+      "stem": "Which of the following pairs of ancient and modern names of rivers is/are correctly matched ?\nSelect the answer using the code given below :",
+      "statements": [],
+      "pairs": [
+        {
+          "left": "Vitasta",
+          "right": "Chenab"
+        },
+        {
+          "left": "Asikni",
+          "right": "Jhelum"
+        },
+        {
+          "left": "Parushni",
+          "right": "Ravi"
+        },
+        {
+          "left": "Yavyavati",
+          "right": "Beas"
+        }
+      ],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "3 and 4"
+        },
+        {
+          "label": "C",
+          "text": "3 only"
+        },
+        {
+          "label": "D",
+          "text": "4 only"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 14,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements on the Amaravati Stupa and its relief sculpture is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It was located in the lower Krishna valley."
+        },
+        {
+          "label": "2",
+          "text": "In India, it was next only to the Sanchi Stupa in size."
+        },
+        {
+          "label": "3",
+          "text": "The Amaravati school of sculpture made a lasting impact on the later South Indian sculpture, and its products were carried to Sri Lanka and South-east Asia."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 15,
+      "type": "matching_pairs",
+      "stem": "Which of the following pairs of the king and his dynasty in early historical Tamilakam is/are not correctly matched ?\nSelect the answer using the code given below :",
+      "statements": [],
+      "pairs": [
+        {
+          "left": "Senguttuvan",
+          "right": "Chera"
+        },
+        {
+          "left": "Udiyanjeral",
+          "right": "Chola"
+        },
+        {
+          "left": "Nedunjeliyan",
+          "right": "Pandya"
+        }
+      ],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 16,
+      "type": "multiple_statements",
+      "stem": "Which of the following factors contributed to the formation of the Forward Bloc by Subhas Chandra Bose in 1939 ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Bose failed to win the confidence of Mahatma Gandhi."
+        },
+        {
+          "label": "2",
+          "text": "The Congress Left was disunited and failed to support Bose."
+        },
+        {
+          "label": "3",
+          "text": "The Communists did not support Bose in his endeavours."
+        },
+        {
+          "label": "4",
+          "text": "The supporters of M.N. Roy and socialist leaders like Jayaprakash Narayan preferred Congress unity to supporting Bose."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1, 2 and 4"
+        },
+        {
+          "label": "C",
+          "text": "1, 3 and 4"
+        },
+        {
+          "label": "D",
+          "text": "2 and 4 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 17,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements regarding the British policy in Awadh immediately after its annexation in 1856 :\nWhich of the statements given above is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The taluqdars were dispossessed of their estates but allowed to retain their arms and forts."
+        },
+        {
+          "label": "2",
+          "text": "A Summary Revenue Settlement was made in 1856 assuming that the taluqdars were outsiders."
+        },
+        {
+          "label": "3",
+          "text": "The British believed in taking revenue directly from the peasants by removing the taluqdars."
         }
       ],
       "pairs": [],
@@ -73,11 +817,2957 @@
         },
         {
           "label": "B",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 18,
+      "type": "assertion_support",
+      "stem": "Consider the following assertion :\nThe genesis of political alliances based on community lay in the very nature of the Montague-Chelmsford Reforms, 1919.\nWhich of the following statements support/supports the above assertion ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Reforms retained and extended the principle of separate electorates."
+        },
+        {
+          "label": "2",
+          "text": "Separate electorates were supposed to counter Indian nationalism, which was growing stronger."
+        },
+        {
+          "label": "3",
+          "text": "Deprived classes rallied around the favours inherent in separate electorates."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 19,
+      "type": "standard_mcq",
+      "stem": "Pandit Mallikarjun Mansur, the famous classical singer from Karnataka, represented the :",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Agra Gharana"
+        },
+        {
+          "label": "B",
+          "text": "Gwalior Gharana"
+        },
+        {
+          "label": "C",
+          "text": "Patiala Gharana"
+        },
+        {
+          "label": "D",
+          "text": "Jaipur-Atrauli Gharana"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 20,
+      "type": "standard_mcq",
+      "stem": "In which one among the following texts does the term kshetra-patni ('mistress of the field') originate ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Rigveda"
+        },
+        {
+          "label": "B",
+          "text": "Atharvaveda"
+        },
+        {
+          "label": "C",
+          "text": "Ashtadhyayi"
+        },
+        {
+          "label": "D",
+          "text": "Arthashastra"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 21,
+      "type": "assertion_support",
+      "stem": "Consider the following statements with reference to India's response to climate change :\nI. India's Long-Term Low Emission Development Strategy (LT-LEDS) is a crucial tool for achieving net-zero emissions by 2070.\nII. India's 4th Biennial Update Report (BUR-4) submitted in December, 2024 recorded around 8% decrease in Greenhouse gas emissions in 2020 over 2019.\nIII. Climate-resilient development necessarily depends on quick and short-term achievement of emission reduction targets.\nWhich of the following relationships among the above statements is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Statement I is empirically supported by statement II."
+        },
+        {
+          "label": "2",
+          "text": "Statement III contradicts the approach implicit in statement I."
+        },
+        {
+          "label": "3",
+          "text": "Statement I and statement III together establish the premise of long-term sustainability."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 22,
+      "type": "multiple_statements",
+      "stem": "With respect to the Western Hoolock Gibbons, which of the following statements is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "A Sanctuary in North-east India is home to this ape species listed as Endangered in the International Union for Conservation of Nature (IUCN) Red List."
+        },
+        {
+          "label": "2",
+          "text": "They have specialized brachiation and can easily swing between trees."
+        },
+        {
+          "label": "3",
+          "text": "They possess a strong and heavy build like gorillas, yet are remarkably agile tree climbers."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 23,
+      "type": "multiple_statements",
+      "stem": "Which of the following best explain(s) the rationale for protecting mangrove ecosystems in the context of climate resilience ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Mangroves reduce tidal energy and store freshwater, making them ideal sites for paddy cultivation in saline estuarine belts."
+        },
+        {
+          "label": "2",
+          "text": "Their salt-sensitive roots filter seawater, making mangroves key to converting coastal land into freshwater aquaculture zones."
+        },
+        {
+          "label": "3",
+          "text": "By withstanding tidal surges and offering biomass resources, mangroves function both as natural bio-shields and livelihood bases for rural communities."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 24,
+      "type": "multiple_statements",
+      "stem": "In what way(s) does the Vizhinjam International Seaport represent a structural shift in India's maritime trade and logistics policy ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "By functioning exclusively as a domestic cargo hub to reduce reliance on coastal shipping and eliminate the need for foreign collaborations."
+        },
+        {
+          "label": "2",
+          "text": "By focusing primarily on passenger cruise tourism and heritage shipping to increase Kerala's profile as a maritime heritage destination."
+        },
+        {
+          "label": "3",
+          "text": "By leveraging its natural deep draft and strategic location to reduce dependence on foreign trans-shipment ports, enhance revenue retention, and reposition India in regional maritime trade."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 25,
+      "type": "standard_mcq",
+      "stem": "Identify the river of the Indian sub-continent on the basis of the following information :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It has an antecedent drainage system."
+        },
+        {
+          "label": "2",
+          "text": "It flows through three countries."
+        },
+        {
+          "label": "3",
+          "text": "It originates in the Tibetan Plateau and is an important river for irrigation."
+        },
+        {
+          "label": "4",
+          "text": "It does not form distributaries."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Brahmaputra"
+        },
+        {
+          "label": "B",
+          "text": "Indus"
+        },
+        {
+          "label": "C",
+          "text": "Sutlej"
+        },
+        {
+          "label": "D",
+          "text": "Teesta"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 26,
+      "type": "multiple_statements",
+      "stem": "Which of the following with reference to Indian States is/are not correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Uttar Pradesh shares its boundary with the highest number of other Indian States."
+        },
+        {
+          "label": "2",
+          "text": "Rajasthan shares the longest international border among all Indian States."
+        },
+        {
+          "label": "3",
+          "text": "Sikkim is the only State that shares its boundary with just one other Indian State."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 27,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to the arrival of Amur Falcons at Doyang Lake in Nagaland each year from Mongolia is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It showcases how sustained local conservation efforts can contribute to the arrival and protection of international migratory birds."
+        },
+        {
+          "label": "2",
+          "text": "It reflects the global success of advanced tracking technologies that guide migratory birds back to their stopover sites."
+        },
+        {
+          "label": "3",
+          "text": "It confirms that Amur Falcons have adapted to permanent residency in India due to favourable habitat changes."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 28,
+      "type": "multiple_statements",
+      "stem": "Which among the following is/are the objective(s) of the Rainfed Area Development (RAD) initiative under the National Mission for Sustainable Agriculture (NMSA) ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Encouraging monoculture in rainfed areas"
+        },
+        {
+          "label": "2",
+          "text": "Increasing rice cultivation in irrigated regions"
+        },
+        {
+          "label": "3",
+          "text": "Enhancing productivity and minimising climatic risks through Integrated Farming Systems (IFS)"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 29,
+      "type": "multiple_statements",
+      "stem": "Which of the following is/are the most significant implication(s) of obtaining Oeko-Tex certification for Eri Silk in the global textile industry ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It allows Indian exporters to compete in high-end markets that prioritise chemical-free products."
+        },
+        {
+          "label": "2",
+          "text": "It confirms that Eri Silk meets international safety, environmental, and quality standards, enabling its entry into premium eco-conscious markets."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 30,
+      "type": "multiple_statements",
+      "stem": "Ships from which of the following countries have to cross the Strait of Hormuz to reach out to the Indian Ocean ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Bahrain"
+        },
+        {
+          "label": "2",
+          "text": "Syria"
+        },
+        {
+          "label": "3",
+          "text": "Qatar"
+        },
+        {
+          "label": "4",
+          "text": "Egypt"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 and 4"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 31,
+      "type": "standard_mcq",
+      "stem": "Tungurahua Volcano, which was declared a Global Geopark by UNESCO in 2025, is situated in which one among the following countries ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Ecuador"
+        },
+        {
+          "label": "B",
+          "text": "Peru"
+        },
+        {
+          "label": "C",
+          "text": "Bolivia"
+        },
+        {
+          "label": "D",
+          "text": "Colombia"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 32,
+      "type": "multiple_statements",
+      "stem": "With reference to Madhav National Park, which of the following statements is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It was declared a Tiger Reserve in India in 2025."
+        },
+        {
+          "label": "2",
+          "text": "Sakhya Sagar, which is designated as a Ramsar Site, is situated within this National Park."
+        },
+        {
+          "label": "3",
+          "text": "Its area is shared between Madhya Pradesh and Rajasthan."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 33,
+      "type": "multiple_statements",
+      "stem": "With reference to the climate of Andaman and Nicobar Islands, which of the following statements is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The climate can be defined as a humid, tropical coastal climate."
+        },
+        {
+          "label": "2",
+          "text": "It receives rainfall from both South-west monsoon and North-east monsoon."
+        },
+        {
+          "label": "3",
+          "text": "Maximum precipitation is between December and May."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 34,
+      "type": "multiple_statements",
+      "stem": "Which of the following geographical features or phenomena is/are associated with the Peninsular Block of India ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Submergence of parts of the western coast due to tectonic activity"
+        },
+        {
+          "label": "2",
+          "text": "Presence of residual mountain ranges such as the Veliconda hills and Mahendragiri hills"
+        },
+        {
+          "label": "3",
+          "text": "Deep, V-shaped river valleys formed by fast-flowing rivers"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 35,
+      "type": "assertion_support",
+      "stem": "Consider the following statements with reference to the Sagarmala Programme of the Government of India :\nI. The Sagarmala Programme seeks to achieve port-led economic growth through cost-effective and sustainable coastal infrastructure.\nII. The success of the Sagarmala Programme is reflected in significant growth in coastal and inland waterway shipping, along with improved global port rankings.\nIII. Sagarmala 2.0 aims to position India as a global maritime innovation hub aligned with Atmanirbhar Bharat and Viksit Bharat 2047 visions.\nWhich of the following relationships among the above statements is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Statement II validates the effectiveness of the strategies envisioned in statement I."
+        },
+        {
+          "label": "2",
+          "text": "Statement III extends the objectives of statement I by embedding them into a future-oriented innovation framework."
+        },
+        {
+          "label": "3",
+          "text": "Statement I contradicts statement III by focusing only on traditional infrastructure instead of modern innovation."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 36,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about Rhynchostylis retusa (Foxtail orchid) :\nWhich of the statements given above is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It is an epiphytic orchid."
+        },
+        {
+          "label": "2",
+          "text": "The species is endemic to North-east India."
+        },
+        {
+          "label": "3",
+          "text": "It is the State flower of Arunachal Pradesh and Assam."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 37,
+      "type": "multiple_statements",
+      "stem": "Which one of the following statements with regard to the Moidams, built by the Tai-Ahom kingdom and inscribed as a World Heritage Site by UNESCO, is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "They acted as army fortresses."
+        },
+        {
+          "label": "2",
+          "text": "They were recreation centres of the Royals and Nobles."
+        },
+        {
+          "label": "3",
+          "text": "They were burial grounds of the Royals and Nobles."
+        },
+        {
+          "label": "4",
+          "text": "They were battle drill centres of the Royals and Nobles."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3"
+        },
+        {
+          "label": "C",
+          "text": "3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 and 4"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 38,
+      "type": "standard_mcq",
+      "stem": "At the United Nations Ocean Conference (UNOC) held in June, 2025 in France, the Food and Agricultural Organization (FAO) of the United Nations demonstrated its leading voice on marine and ocean issues, especially on sustainable fisheries and aquaculture for resilient livelihood and \"Blue Transformation\". Which of the following combinations about the \"Four Betters\" proposed by FAO for \"Blue Transformation\" is correct ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Better production, better nutrition, better environment and better ocean"
+        },
+        {
+          "label": "B",
+          "text": "Better production, better nutrition, better environment and better life"
+        },
+        {
+          "label": "C",
+          "text": "Better coral reefs, better nutrition, better environment and better life"
+        },
+        {
+          "label": "D",
+          "text": "Better estuaries, better nutrition, better environment and better mangrove vegetation"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 39,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with reference to Lake Turkana is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It is the largest desert lake in the world."
+        },
+        {
+          "label": "2",
+          "text": "The lake is situated in South Sudan along the eastern fringe of the Sahara desert."
+        },
+        {
+          "label": "3",
+          "text": "The lake is listed as a UNESCO World Heritage Site and is also referred to as the 'Jade Sea'."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 40,
+      "type": "standard_mcq",
+      "stem": "Which one of the following is the first Plan Vivo certified Reducing Emissions from Deforestation and Forest Degradation (REDD+) project in India ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Uttarakhand REDD+ project"
+        },
+        {
+          "label": "B",
+          "text": "ICFRE-ICIMOD Transboundary REDD+ project in North-Eastern Himalayas"
+        },
+        {
+          "label": "C",
+          "text": "Khasi Hills Community REDD+ project"
+        },
+        {
+          "label": "D",
+          "text": "Sikkim Mamley Kamrang Community REDD+ project"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 41,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to genetic medicine is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Genetic medicines correct/compensate for the faulty genes responsible for disease."
+        },
+        {
+          "label": "2",
+          "text": "Engineered viruses and lipid nanoparticles are used as carriers of the genetic medicine."
+        },
+        {
+          "label": "3",
+          "text": "Genetic medicines alter the entire DNA sequence."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 42,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to Large Language Models (LLMs) used in machine learning is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "LLMs assign probabilities to the next possible words and then pick the one with the highest probability."
+        },
+        {
+          "label": "2",
+          "text": "LLMs process data through mathematical optimization to minimise prediction errors."
+        },
+        {
+          "label": "3",
+          "text": "LLMs produce unbiased outputs."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
           "text": "1 and 2 only"
         },
         {
           "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 43,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to stealth technology is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Stealth objects have a very small radar cross-section and are coated with Radar Absorbing Material."
+        },
+        {
+          "label": "2",
+          "text": "Stealth objects can be detected using specific frequencies."
+        },
+        {
+          "label": "3",
+          "text": "Stealth objects are coated with metamaterials to increase the scattering of electromagnetic radiation."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 44,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to Black Boxes used in modern aircrafts is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "They carry a beacon emitting red light pulses to facilitate underwater detection."
+        },
+        {
+          "label": "2",
+          "text": "They record both the cockpit voice and flight data."
+        },
+        {
+          "label": "3",
+          "text": "Their memory units are made using either stainless steel or titanium."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 45,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to Green Hydrogen is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It is decarbonized hydrogen obtained from natural gas reforming combined with carbon capture and storage (CCS)."
+        },
+        {
+          "label": "2",
+          "text": "It is produced using electrolysis of water with electricity generated by renewable energy."
+        },
+        {
+          "label": "3",
+          "text": "National Green Hydrogen Mission of India aims for abatement of nearly 50 MMT of annual greenhouse gas emissions by 2030."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 46,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements with regard to involvement of private entities in India's space programme :\nWhich of the statements given above is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The Indian National Space Promotion and Authorisation Centre (IN-SPACe) is an autonomous agency formed to facilitate participation of private entities."
+        },
+        {
+          "label": "2",
+          "text": "Agnikul Cosmos launched the world's first flight using 3D-printed rocket engine."
+        },
+        {
+          "label": "3",
+          "text": "Skyroot Aerospace has developed liquid fuel for GSLV."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 47,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to drone swarms is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "They use Terahertz band of frequency to communicate with the command centre."
+        },
+        {
+          "label": "2",
+          "text": "Individual drones in the swarm can communicate with other drones in the swarm."
+        },
+        {
+          "label": "3",
+          "text": "GPS Spoofing is a commonly used technique to counter drone swarm attack."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 48,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to GenomeIndia Project is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It is a part of the Human Genome Project."
+        },
+        {
+          "label": "2",
+          "text": "The project is funded by the Department of Biotechnology (DBT), Government of India."
+        },
+        {
+          "label": "3",
+          "text": "Its primary aim is to build a catalogue of genetic diversity of the Indian population."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 49,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to the National Quantum Mission (NQM) is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It aims at developing intermediate-scale quantum computers with 50 - 1000 physical qubits."
+        },
+        {
+          "label": "2",
+          "text": "Its implementation includes setting up of four Thematic Hubs (T-Hubs) in academic and national R&D institutes across India."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 50,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to India's Deep Ocean Mission is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It was launched by the Ministry of Ports, Shipping and Waterways, Government of India."
+        },
+        {
+          "label": "2",
+          "text": "Matsya-6000 has been designed to carry 3 people for deep sea exploration."
+        },
+        {
+          "label": "3",
+          "text": "Samudrayaan is a project under this mission."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 51,
+      "type": "case_based",
+      "stem": "Which one among the following principles of public administration was most strongly demonstrated by Mr. X's actions ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": "Mr. X, a senior officer, was overseeing a critical vaccination programme during a pandemic. He found that a private service provider responsible for vaccine distribution was compromising on quality to make profits. Despite immense pressure to manage the issue due to vested interests, he raised his voice based on the principles of public administration which he learnt during various training programmes attended across his career. He reported the issue to the appropriate vigilance authority and halted the contract to ensure citizen welfare.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Esprit de corps"
+        },
+        {
+          "label": "B",
+          "text": "Equity"
+        },
+        {
+          "label": "C",
+          "text": "Accountability"
+        },
+        {
+          "label": "D",
+          "text": "Delegation"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 52,
+      "type": "case_based",
+      "stem": "Consider the following statements with reference to the above :\nWhich of the statements given above would contribute to the resolution process ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "A successful conflict resolution process must begin with acknowledging the cultural concerns of the protesting tribal community before discussing technical alternatives."
+        },
+        {
+          "label": "2",
+          "text": "The Government should move ahead with the project without delay to address urban health concerns, which outweigh the sentiments of a small group."
+        },
+        {
+          "label": "3",
+          "text": "Creating a multi-stakeholder dialogue platform — including tribal leaders, environmental experts, and municipal representatives — to build mutual understanding and help de-escalate tensions."
+        },
+        {
+          "label": "4",
+          "text": "Conducting an independent Environmental and Social Impact Assessment (ESIA) and sharing findings transparently with both sides to facilitate evidence-based decision-making."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": "In a multi-ethnic district where both economic competition and historical grievances frequently led to community tensions, a flashpoint has arisen with a Government decision to allocate land for a waste management facility near a tribal hamlet, sparking protests by the tribal community, which claimed that the land was sacred and critical to their cultural identity. At the same time, urban residents and local industries supported the project, citing severe solid waste challenges and health concerns due to lack of a proper disposal site. The conflict has escalated with road blockades, social media campaigns, and allegations of police excesses. As a responsible Government official, you are tasked with resolving the situation through mediation, ensuring a sustainable outcome that balances environmental needs, tribal rights, and urban public health.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 3 and 4 only"
+        },
+        {
+          "label": "B",
+          "text": "2, 3 and 4 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2, 3 and 4"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 53,
+      "type": "case_based",
+      "stem": "What amongst the following should Ms. X do now ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Immediately disclose the information to the project committee and the public"
+        },
+        {
+          "label": "2",
+          "text": "Recommend removing the contractor from the shortlist to protect the project's integrity"
+        },
+        {
+          "label": "3",
+          "text": "Propose a 'limited disclosure' to an oversight committee, while keeping the information confidential from the public for the time being"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": "Ms. X is a mid-level civil service official working in the urban development department of a major city. Recently, she was involved in approving a contract for a public infrastructure project — a new community park. During the approval process, she received a piece of confidential information indicating that one of the shortlisted contractors had a history of poor workmanship and allegations of corruption in other cities, though nothing had been legally proven. The Head of the Department, Mr. Y, advised her not to disclose this information to the project committee or the public because it could delay the project and damage the city's reputation. However, Ms. X believed that withholding such information compromised transparency and public trust.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 54,
+      "type": "case_based",
+      "stem": "Based on the above, select the correct conclusion from the options given below :",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": "'X' was addressing a seminar on the meaning of the term 'law' as provided under Article 13, Part III of the Constitution of India. 'X' explained that the meaning of the term 'law' in the Constitution of India was very comprehensive. It included ordinances, orders and even rules and regulations. 'Y' pointed out that the term 'law' in Article 13 also included custom or usage having in the territory of India the force of law, to which 'X' was not convinced.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'X' is correct in the interpretation of law, including the view on non-inclusion of custom."
+        },
+        {
+          "label": "B",
+          "text": "The view of 'Y' that 'law' included custom is not correct."
+        },
+        {
+          "label": "C",
+          "text": "The views of both 'X' and 'Y' are correct."
+        },
+        {
+          "label": "D",
+          "text": "The view of only 'Y' is correct."
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 55,
+      "type": "count_correct",
+      "stem": "Consider the following statements with reference to the Constitution of India :\nWhich one of the following conclusions based on the above statements is correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "There is no Article in the Constitution of India that specifies that the Constitution of India will be officially called the 'Constitution of India'."
+        },
+        {
+          "label": "2",
+          "text": "There is no Article in the Constitution of India that specifies that the Indian Independence Act, 1947 and the Government of India Act, 1935 stand repealed."
+        },
+        {
+          "label": "3",
+          "text": "There is no Article in the Constitution of India that mentions 26th January, 1950 as the date of the commencement of the Constitution of India."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "All three statements are correct."
+        },
+        {
+          "label": "B",
+          "text": "There is no correct statement."
+        },
+        {
+          "label": "C",
+          "text": "There are two correct statements that include statement 3."
+        },
+        {
+          "label": "D",
+          "text": "There is only one correct statement."
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 56,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to the persons with disabilities in India is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The Rights of Persons with Disabilities Act, an Act passed by the Parliament of India in 2018, mandates reservation in education and employment, places a legal duty on Governments to ensure accessibility and non-discrimination."
+        },
+        {
+          "label": "2",
+          "text": "The Sugamya Bharat Abhiyan focuses on achieving universal accessibility for Persons with Disabilities across three key domains — built infrastructure, transport systems and information and communication technology."
+        },
+        {
+          "label": "3",
+          "text": "The National Divyangjan Finance and Development Corporation (NDFDC) is a public sector organisation set up by the Ministry of Corporate Affairs as a not-for-profit company to promote entrepreneurship among Persons with Disabilities (PwDs)."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3"
+        },
+        {
+          "label": "D",
+          "text": "1 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "Provisions regarding the administration of the Tribal Areas in the States of Assam, Meghalaya, Tripura and Mizoram are given in the Fifth Schedule of the Constitution of India."
+        },
+        {
+          "label": "2",
+          "text": "Some tribes of India are entitled to exemption from paying Income Tax on certain incomes."
+        },
+        {
+          "label": "3",
+          "text": "The Constitution of India provides for reservation of seats in Panchayats for women belonging to the Scheduled Castes and the Scheduled Tribes."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "A",
+      "is_dropped": false,
+      "number": 57,
+      "type": "count_correct",
+      "stem": "Consider the following statements about the provisions pertaining to the Scheduled Castes and the Scheduled Tribes in India :\nWhich one of the following conclusions based on the above statements is correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There are two correct statements, that include statement 2."
+        },
+        {
+          "label": "B",
+          "text": "There are two correct statements, that are statements 1 and 3."
+        },
+        {
+          "label": "C",
+          "text": "There is only one correct statement."
+        },
+        {
+          "label": "D",
+          "text": "All three statements are correct."
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "Unstarred questions are those to which a Member desires an oral answer in the House."
+        },
+        {
+          "label": "2",
+          "text": "Starred questions are those to which a Member desires a written answer."
+        },
+        {
+          "label": "3",
+          "text": "No supplementary question can be asked on an unstarred question."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "C",
+      "is_dropped": false,
+      "number": 58,
+      "type": "count_correct",
+      "stem": "Consider the following statements in respect of questions asked by the Members in the Parliament of India :\nWhich one of the following conclusions based on the above statements is correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All the three statements are correct."
+        },
+        {
+          "label": "B",
+          "text": "There are two correct statements, that include statement 2."
+        },
+        {
+          "label": "C",
+          "text": "There is only one correct statement."
+        },
+        {
+          "label": "D",
+          "text": "There is no correct statement."
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "Although members of this Committee are elected from both Houses of Parliament, the Chairperson of this Committee is appointed by the Chairman of the Rajya Sabha."
+        },
+        {
+          "label": "2",
+          "text": "Twenty members are elected by the Rajya Sabha and ten members by the Lok Sabha."
+        },
+        {
+          "label": "3",
+          "text": "No Minister, except for the Union Minister of Social Justice and Empowerment, is eligible to be a member of this Committee."
+        },
+        {
+          "label": "4",
+          "text": "Members are elected for a fixed term of two years from the date they enter their office."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "D",
+      "is_dropped": false,
+      "number": 59,
+      "type": "count_correct",
+      "stem": "Consider the following statements about the Committee on the Welfare of Scheduled Castes and Scheduled Tribes of the Parliament of India :\nWhich one of the following conclusions based on the above statements is correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There are four correct statements."
+        },
+        {
+          "label": "B",
+          "text": "There is only one correct statement, that is statement 2."
+        },
+        {
+          "label": "C",
+          "text": "There are two correct statements, that include statement 1."
+        },
+        {
+          "label": "D",
+          "text": "There is no correct statement."
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "It aims to enhance India's air defence, ballistic missile defence and aerial offensive capabilities."
+        },
+        {
+          "label": "2",
+          "text": "This Mission is being designed to enhance rapid, precise, and powerful defence responses, reinforcing India's strategic autonomy."
+        },
+        {
+          "label": "3",
+          "text": "One of the aims of this Mission is to cover all public places of India by an expanded nationwide security shield by 2035."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "A",
+      "is_dropped": false,
+      "number": 60,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about Mission Sudarshan Chakra of India :\nWhich of the statements given above is/are correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "'Maitri Setu', built over Feni river, connects Ramgarh in India with Sabroom in Bangladesh."
+        },
+        {
+          "label": "2",
+          "text": "Jhulaghat suspension bridge connects India with Myanmar."
+        },
+        {
+          "label": "3",
+          "text": "Mechi bridge and its approaches connect Panitanki Bypass in India with Kakarvitta in Nepal."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "D",
+      "is_dropped": false,
+      "number": 61,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about river bridges connecting India with neighbouring countries :\nWhich of the statements given above is/are correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3"
+        },
+        {
+          "label": "C",
+          "text": "1 only"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "A Zero FIR can be lodged at a police station, even though the place of commission of a cognizable/non-cognizable offence is outside the territorial jurisdiction of that police station."
+        },
+        {
+          "label": "2",
+          "text": "The Officer-in-Charge of the police station where a Zero FIR has been lodged may, with the permission of the competent authority, initiate a preliminary enquiry."
+        },
+        {
+          "label": "3",
+          "text": "Under Zero FIR, it is obligatory for the informant to furnish information electronically."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "D",
+      "is_dropped": false,
+      "number": 62,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about a Zero First Information Report (Zero FIR) under the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023 is/are correct ?\nSelect the answer using the code given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 only"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": {
+        "headers": [
+          "Sl. No.",
+          "Organisation",
+          "Function",
+          "Controlling Union Ministry"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Central Economic Intelligence Bureau (CEIB)",
+            "To coordinate between various law enforcement agencies",
+            "Ministry of Home Affairs"
+          ],
+          [
+            "2.",
+            "Serious Fraud Investigation Office (SFIO)",
+            "To investigate complex corporate frauds",
+            "Ministry of Finance"
+          ],
+          [
+            "3.",
+            "Central Bureau of Investigation (CBI)",
+            "To preserve values in public life and ensure the health of the national economy",
+            "Ministry of Personnel, Public Grievances and Pension"
+          ]
+        ]
+      },
+      "case_text": null,
+      "correct_option": "A",
+      "is_dropped": false,
+      "number": 63,
+      "type": "table_based",
+      "stem": "With reference to the organisations under the Government of India, consider the following details :\nIn how many of the above rows are the given details correctly matched ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "None"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "Employment Policy Convention"
+        },
+        {
+          "label": "2",
+          "text": "Abolition of Forced Labour Convention"
+        },
+        {
+          "label": "3",
+          "text": "International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families"
+        },
+        {
+          "label": "4",
+          "text": "Geneva Convention Relative to the Protection of Civilian Persons in Time of War"
+        },
+        {
+          "label": "5",
+          "text": "Convention on Reduction of Statelessness"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": null,
+      "is_dropped": true,
+      "number": 64,
+      "type": "multiple_statements",
+      "stem": "Which of the following international conventions have not been ratified by India ?\nSelect the answer using the code given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 and 4"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "3 and 4 only"
+        },
+        {
+          "label": "D",
+          "text": "3, 4 and 5"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "The Summit's intellectual framework was based on three foundational Sutras : People, Planning, and Progress."
+        },
+        {
+          "label": "2",
+          "text": "The Preamble of the Summit stresses Democratising AI Resources, which acknowledges the Charter for Democratic Diffusion of AI as a binding framework to support locally relevant innovation and strengthen resilient AI ecosystems while respecting national laws."
+        },
+        {
+          "label": "3",
+          "text": "The New Delhi Declaration on AI Impact was structured around seven Chakras (Pillars), which included Access for Social Empowerment, AI for Science, and Secure and Trusted AI."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "D",
+      "is_dropped": false,
+      "number": 65,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements with respect to the AI Impact Summit, 2026 held in New Delhi :\nWhich of the statements given above is/are correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "Kaladan Multi-Modal Transit Transport Project"
+        },
+        {
+          "label": "2",
+          "text": "IMT Trilateral Highway"
+        },
+        {
+          "label": "3",
+          "text": "Agartala-Akhaura Rail Line"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "A",
+      "is_dropped": false,
+      "number": 66,
+      "type": "multiple_statements",
+      "stem": "Which of the following connectivity projects is/are a part of cooperation between India and the ASEAN member countries ?\nSelect the answer using the code given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [],
+      "pairs": [],
+      "lists": {
+        "list_i": [
+          {
+            "label": "A",
+            "text": "Mangdechhu Hydroelectric Project"
+          },
+          {
+            "label": "B",
+            "text": "Restoration of Stor Palace"
+          },
+          {
+            "label": "C",
+            "text": "District Hospital at Dickoya"
+          },
+          {
+            "label": "D",
+            "text": "Institute of Security and Law Enforcement Studies"
+          }
+        ],
+        "list_ii": [
+          {
+            "label": "1",
+            "text": "Maldives"
+          },
+          {
+            "label": "2",
+            "text": "Afghanistan"
+          },
+          {
+            "label": "3",
+            "text": "Bhutan"
+          },
+          {
+            "label": "4",
+            "text": "Sri Lanka"
+          }
+        ]
+      },
+      "table": null,
+      "case_text": null,
+      "correct_option": "B",
+      "is_dropped": false,
+      "number": 67,
+      "type": "matching_lists",
+      "stem": "Match List I with List II and select the answer using the code given below the Lists :\nList I (Project Supported by India)\nList II (Country)",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-1, B-4, C-2, D-3"
+        },
+        {
+          "label": "B",
+          "text": "A-3, B-2, C-4, D-1"
+        },
+        {
+          "label": "C",
+          "text": "A-3, B-4, C-2, D-1"
+        },
+        {
+          "label": "D",
+          "text": "A-1, B-2, C-4, D-3"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "Su-30 MKI Fighter Jets"
+        },
+        {
+          "label": "2",
+          "text": "T-90 MK-III Tanks"
+        },
+        {
+          "label": "3",
+          "text": "Akula Class Submarine"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "A",
+      "is_dropped": false,
+      "number": 68,
+      "type": "multiple_statements",
+      "stem": "Which of the following items of defence hardware is/are manufactured in India ?\nSelect the answer using the code given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3"
+        },
+        {
+          "label": "C",
+          "text": "1 only"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "The 'Colombo Process' is a regional consultative process in which member states take binding decisions by consensus."
+        },
+        {
+          "label": "2",
+          "text": "The 'Abu Dhabi Dialogue' is a voluntary non-binding consultative process among Asian countries of labour origin and destination to facilitate regional cooperation on contractual labour mobility."
+        },
+        {
+          "label": "3",
+          "text": "The 'Global Forum for Migration and Development', created upon the proposal of a former UN Secretary General, is a voluntary forum whose decisions are non-binding in nature."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "C",
+      "is_dropped": false,
+      "number": 69,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about platforms for multilateral co-operation :\nWhich of the statements given above is/are correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
           "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [
+        {
+          "label": "1",
+          "text": "World Food Programme"
+        },
+        {
+          "label": "2",
+          "text": "United Nations Children's Fund"
+        },
+        {
+          "label": "3",
+          "text": "United Nations High Commissioner for Refugees"
+        },
+        {
+          "label": "4",
+          "text": "International Labour Organisation"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "correct_option": "A",
+      "is_dropped": false,
+      "number": 70,
+      "type": "count_correct",
+      "stem": "Consider the following UN organisations/agencies :\nHow many of the above has/have been awarded the Nobel Prize twice ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "statements": [],
+      "pairs": [],
+      "lists": {
+        "list_i": [
+          {
+            "label": "A",
+            "text": "UNMIL"
+          },
+          {
+            "label": "B",
+            "text": "MINURCAT"
+          },
+          {
+            "label": "C",
+            "text": "MINUSTAH"
+          },
+          {
+            "label": "D",
+            "text": "UNMISET"
+          }
+        ],
+        "list_ii": [
+          {
+            "label": "1",
+            "text": "2007 – 2010"
+          },
+          {
+            "label": "2",
+            "text": "2002 – 2005"
+          },
+          {
+            "label": "3",
+            "text": "2003 – 2018"
+          },
+          {
+            "label": "4",
+            "text": "2004 – 2017"
+          }
+        ]
+      },
+      "table": null,
+      "case_text": null,
+      "correct_option": "B",
+      "is_dropped": false,
+      "number": 71,
+      "type": "matching_lists",
+      "stem": "Match List I with List II and select the answer using the code given below the Lists :\nList I (UN Peacekeeping Operation)\nList II (Period of Operation)",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-3, B-4, C-1, D-2"
+        },
+        {
+          "label": "B",
+          "text": "A-3, B-1, C-4, D-2"
+        },
+        {
+          "label": "C",
+          "text": "A-2, B-1, C-4, D-3"
+        },
+        {
+          "label": "D",
+          "text": "A-2, B-4, C-1, D-3"
+        }
+      ],
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 72,
+      "type": "matching_lists",
+      "stem": "Match List I with List II and select the answer using the code given below the Lists :\nList I (BIMSTEC Centre/Establishment)\nList II (Location)",
+      "statements": [],
+      "pairs": [],
+      "lists": {
+        "list_i": [
+          {
+            "label": "A",
+            "text": "BIMSTEC Cultural Industries Observatory"
+          },
+          {
+            "label": "B",
+            "text": "BIMSTEC Energy Centre"
+          },
+          {
+            "label": "C",
+            "text": "BIMSTEC Centre for Weather and Climate"
+          },
+          {
+            "label": "D",
+            "text": "BIMSTEC Technology Transfer Facility"
+          }
+        ],
+        "list_ii": [
+          {
+            "label": "1",
+            "text": "NOIDA"
+          },
+          {
+            "label": "2",
+            "text": "Bengaluru"
+          },
+          {
+            "label": "3",
+            "text": "Colombo"
+          },
+          {
+            "label": "4",
+            "text": "Thimphu"
+          }
+        ]
+      },
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "A-3, B-2, C-1, D-4"
+        },
+        {
+          "label": "B",
+          "text": "A-3, B-1, C-2, D-4"
+        },
+        {
+          "label": "C",
+          "text": "A-4, B-2, C-1, D-3"
+        },
+        {
+          "label": "D",
+          "text": "A-4, B-1, C-2, D-3"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 73,
+      "type": "standard_mcq",
+      "stem": "Which one of the following pairs is not correctly matched ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "3 Corps : Dimapur"
+        },
+        {
+          "label": "B",
+          "text": "4 Corps : Tezpur"
+        },
+        {
+          "label": "C",
+          "text": "14 Corps : Leh"
+        },
+        {
+          "label": "D",
+          "text": "33 Corps : Srinagar"
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 74,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with respect to the Revamped Rashtriya Gram Swaraj Abhiyan (RGSA) is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The period of its implementation is 1st April, 2021 to 31st March, 2026."
+        },
+        {
+          "label": "2",
+          "text": "The key objective of the Revamped RGSA is to develop the governance capabilities of the Panchayati Raj Institutions to deliver on the Sustainable Development Goals."
+        },
+        {
+          "label": "3",
+          "text": "The share of the Central funding for the Revamped RGSA is 100% for all States and Union Territories."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3"
+        },
+        {
+          "label": "D",
+          "text": "2 and 3"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 75,
+      "type": "multiple_statements",
+      "stem": "Which of the following countries are members of the European Union ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Belarus"
+        },
+        {
+          "label": "2",
+          "text": "Poland"
+        },
+        {
+          "label": "3",
+          "text": "Germany"
+        },
+        {
+          "label": "4",
+          "text": "Switzerland"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 4"
+        },
+        {
+          "label": "B",
+          "text": "1 and 4 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "2 and 4 only"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 76,
+      "type": "matching_lists",
+      "stem": "Match List I with List II and select the answer using the code given below the Lists :\nList I (INTERPOL Notice)\nList II (Description)",
+      "statements": [],
+      "pairs": [],
+      "lists": {
+        "list_i": [
+          {
+            "label": "A",
+            "text": "Silver Notice"
+          },
+          {
+            "label": "B",
+            "text": "Blue Notice"
+          },
+          {
+            "label": "C",
+            "text": "Black Notice"
+          },
+          {
+            "label": "D",
+            "text": "Green Notice"
+          }
+        ],
+        "list_ii": [
+          {
+            "label": "1",
+            "text": "To seek information on unidentified bodies"
+          },
+          {
+            "label": "2",
+            "text": "To collect additional information about a person's identity, location, or activities in relation to a criminal investigation"
+          },
+          {
+            "label": "3",
+            "text": "To provide warning about a person's criminal activities, where the person is considered to be a possible threat to public safety"
+          },
+          {
+            "label": "4",
+            "text": "To identify and trace criminal assets"
+          }
+        ]
+      },
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "A-3, B-1, C-2, D-4"
+        },
+        {
+          "label": "B",
+          "text": "A-3, B-2, C-1, D-4"
+        },
+        {
+          "label": "C",
+          "text": "A-4, B-2, C-1, D-3"
+        },
+        {
+          "label": "D",
+          "text": "A-4, B-1, C-2, D-3"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 77,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements in relation to NIRANTAR (National Institute for Research and Application of Natural Resources to Transform, Adapt and Build Resilience), a platform of institutions under the Ministry of Environment, Forest and Climate Change, is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Ecosystem Survey and Analysis is a vertical under this platform, the lead institute of which is Botanical Survey of India, Kolkata."
+        },
+        {
+          "label": "2",
+          "text": "Research and Management of Ecosystem Service is a vertical under this platform, the lead institute of which is Central Zoo Authority, New Delhi."
+        },
+        {
+          "label": "3",
+          "text": "Capacity Development Support is a vertical under this platform, the lead institute of which is Indian Institute of Forest Management, Bhopal."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "2 only"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 78,
+      "type": "multiple_statements",
+      "stem": "The Chancellor of the Federal Republic of Germany visited India in January, 2026. Which of the following is/are not correct in terms of outcomes of this visit ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Signing of a Memorandum of Understanding between the All India Institute of Ayurveda and the University of Hamburg"
+        },
+        {
+          "label": "2",
+          "text": "Signing of a Memorandum of Understanding on Youth Hockey Development between Hockey India and the German Hockey Federation"
+        },
+        {
+          "label": "3",
+          "text": "Establishment of a bilateral dialogue mechanism on the Indo-Pacific"
+        },
+        {
+          "label": "4",
+          "text": "Opening of an Honorary Consul of Germany in Lucknow"
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 4"
+        },
+        {
+          "label": "C",
+          "text": "3 and 4"
+        },
+        {
+          "label": "D",
+          "text": "1 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 79,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about DHRUV64 is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "It is the third chip fabricated under the DIR-V Programme with an overall aim to enable the creation of microprocessors for India."
+        },
+        {
+          "label": "2",
+          "text": "It is India's first homegrown 1.0 GHz, 64-bit dual-core microprocessor."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 80,
+      "type": "multiple_statements",
+      "stem": "The Bureau of Indian Standard (BIS) recently introduced a national standard to test and assess bomb disposal system. Which of the following statements with regard to this system is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The new standard is known as IS 19445 : 2025."
+        },
+        {
+          "label": "2",
+          "text": "It will improve interoperability of equipment across agencies."
+        },
+        {
+          "label": "3",
+          "text": "It was developed by TBRL, DRDO in collaboration with the 30th Central Scientific Research Institute, Russia."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1 only"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 81,
+      "type": "standard_mcq",
+      "stem": "'X', born in the UK, was conferred the Nobel Prize in 2025. He was a professor in an American university when this prize was announced. Identify 'X' :",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Michel H. Devoret"
+        },
+        {
+          "label": "B",
+          "text": "Richard Robson"
+        },
+        {
+          "label": "C",
+          "text": "John Clarke"
+        },
+        {
+          "label": "D",
+          "text": "Joel Mokyr"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 82,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to the Grand Slam Tennis Tournaments is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The tournaments have a shared governance structure establishing the partnership among the four Grand Slam tournaments."
+        },
+        {
+          "label": "2",
+          "text": "They are open for entry to all internationally ranked tennis players above the age of 14."
+        },
+        {
+          "label": "3",
+          "text": "There is a limitation on the number of 'Wild Cards' a player may receive to compete in a Grand Slam Tournament."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 only"
         },
         {
           "label": "D",
@@ -85,98 +3775,677 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
-      "number": 3,
-      "type": "matching_pairs",
-      "stem": "Match the following pairs and select the correct answer using the code given below:",
+      "number": 83,
+      "type": "standard_mcq",
+      "stem": "Which one of the following pairs of semiconductor plants in India and their locations is not correctly matched ?",
       "statements": [],
-      "pairs": [
-        {
-          "left": "1. Chipko Movement",
-          "right": "a. Protection of forests"
-        },
-        {
-          "left": "2. Appiko Movement",
-          "right": "b. Silent Valley"
-        },
-        {
-          "left": "3. Narmada Bachao Andolan",
-          "right": "c. Opposition to large dams"
-        },
-        {
-          "left": "4. Save Silent Valley",
-          "right": "d. Western Ghats of Karnataka"
-        }
-      ],
+      "pairs": [],
       "lists": null,
       "table": null,
       "case_text": null,
       "options": [
         {
           "label": "A",
-          "text": "1-a, 2-b, 3-c, 4-d"
+          "text": "CG Power and Industrial Solutions Pvt. Ltd. in partnership with Renesas Electronics and STARS Microelectronics : Gujarat"
         },
         {
           "label": "B",
-          "text": "1-b, 2-a, 3-d, 4-c"
+          "text": "Tata Semiconductor Assembly and Test Pvt. Ltd. : Assam"
         },
         {
           "label": "C",
-          "text": "1-a, 2-d, 3-c, 4-b"
+          "text": "HCL-Foxconn Joint Venture India Chip Ltd. : Madhya Pradesh"
         },
         {
           "label": "D",
-          "text": "1-d, 2-c, 3-b, 4-a"
+          "text": "SicSem Pvt. Ltd. : Odisha"
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
-      "number": 4,
+      "number": 84,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements with regard to India's indigenous new high resolution weather model, the 'Bharat Forecast System,' is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Its objective is to generate forecasts at the Panchayats cluster level."
+        },
+        {
+          "label": "2",
+          "text": "It was developed by IIT Delhi."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 85,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements with regard to the film 'Boong' :\nWhich of the statements given above is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "The film has recently won the British Academy of Film and Television Arts (BAFTA) Award in the Children's and Family Film category."
+        },
+        {
+          "label": "2",
+          "text": "The film is directed by Lakshmipriya Devi."
+        },
+        {
+          "label": "3",
+          "text": "This is the first Indian film to win a BAFTA award in the Children's and Family Film category."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "3 only"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 86,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements regarding the features of blockchain technology are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Records stored in the database may be made visible to relevant stakeholders without risk of alteration."
+        },
+        {
+          "label": "2",
+          "text": "Copies of the entire database are stored on multiple computers on a network, syncing within seconds."
+        },
+        {
+          "label": "3",
+          "text": "Consortium blockchain is a blend of public and private blockchains allowing selective data access."
+        },
+        {
+          "label": "4",
+          "text": "Mathematical algorithms make it impossible to change or delete any data once recorded and accepted."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 3"
+        },
+        {
+          "label": "B",
+          "text": "2 and 4 only"
+        },
+        {
+          "label": "C",
+          "text": "1, 2 and 4"
+        },
+        {
+          "label": "D",
+          "text": "1 and 4 only"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 87,
+      "type": "standard_mcq",
+      "stem": "An e-commerce revenue model where the seller has control over pricing but doesn't keep products in stock and instead transfers customer orders and shipment details to a third-party supplier, who then ships the goods directly to the customer, is called :",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Dropshipping Model"
+        },
+        {
+          "label": "B",
+          "text": "Affiliate Revenue Model"
+        },
+        {
+          "label": "C",
+          "text": "Transaction Fee Revenue Model"
+        },
+        {
+          "label": "D",
+          "text": "Agency Revenue Model"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 88,
+      "type": "standard_mcq",
+      "stem": "Which one of the following correctly represents the three key sub-indices of the Financial Inclusion Index (FI-Index) of the Reserve Bank of India (RBI) ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Credit access, Insurance depth, and Pension coverage"
+        },
+        {
+          "label": "B",
+          "text": "Banking access, GDP contribution, and Financial literacy"
+        },
+        {
+          "label": "C",
+          "text": "Access, Usage, and Quality"
+        },
+        {
+          "label": "D",
+          "text": "Access, Affordability, and Transparency"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 89,
+      "type": "standard_mcq",
+      "stem": "Which one of the following best describes the key objective of India's 'Open Network for Digital Commerce' (ONDC) initiative ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "To allow government control over all digital commerce transactions"
+        },
+        {
+          "label": "B",
+          "text": "To replace private e-commerce players"
+        },
+        {
+          "label": "C",
+          "text": "To break the dominance of large e-commerce platforms by enabling interoperability across networks"
+        },
+        {
+          "label": "D",
+          "text": "To mandate UPI-based payments for all online transactions"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 90,
+      "type": "standard_mcq",
+      "stem": "Which one of the following statements about Unified Payments Interface (UPI) and Central Bank Digital Currency (Digital Rupee) is not correct ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "UPI is a real-time payment system but Digital Rupee is akin to sovereign paper currency."
+        },
+        {
+          "label": "B",
+          "text": "In case of UPI, settlement for end users happens instantly as the money gets immediately debited or credited but in case of Digital Rupee, there is no settlement as the wallet balance gets transferred to another wallet."
+        },
+        {
+          "label": "C",
+          "text": "UPI transactions are recorded by banks and reflected in bank statements but in case of Digital Rupee, no data is captured in bank statements as transactions are from one wallet to another."
+        },
+        {
+          "label": "D",
+          "text": "In both the cases (UPI and Digital Rupee), the liability lies with the users and their respective banks."
+        }
+      ],
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 91,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about Real-World Assets (RWA) Tokenization are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Tokenization is the process of turning real world assets into digital tokens using blockchain technology."
+        },
+        {
+          "label": "2",
+          "text": "Tokenization of real world assets offers 24 x 7 access, promoting financial inclusion."
+        },
+        {
+          "label": "3",
+          "text": "Tokenization of real world assets will allow the access to high growth investment opportunities for individuals in India."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "D",
+          "text": "1 and 3 only"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 92,
+      "type": "standard_mcq",
+      "stem": "A bond whose proceeds are used only to finance or refinance a combination of both environmental and social projects is called :",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "Green Bond"
+        },
+        {
+          "label": "B",
+          "text": "Social Bond"
+        },
+        {
+          "label": "C",
+          "text": "Sustainability Bond"
+        },
+        {
+          "label": "D",
+          "text": "Sovereign Bond"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 93,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about M1xchange's role in Micro, Small & Medium Enterprises (MSMEs) financing is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "M1xchange provides collateral based loans to MSMEs."
+        },
+        {
+          "label": "2",
+          "text": "M1xchange facilitates discounting of invoices and Bills of Exchange for MSMEs."
+        },
+        {
+          "label": "3",
+          "text": "M1xchange functions as a credit rating agency for MSMEs."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "1 only"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 94,
+      "type": "standard_mcq",
+      "stem": "Which one of the following best describes the 'Crowding Out Effect' in the context of fiscal policy ?",
+      "statements": [],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "A situation where private investment increases due to increased Government spending"
+        },
+        {
+          "label": "B",
+          "text": "A situation where Government borrowing leads to higher interest rates, which reduces private investment"
+        },
+        {
+          "label": "C",
+          "text": "A situation where an increase in taxes leads to increased private sector investment"
+        },
+        {
+          "label": "D",
+          "text": "A situation where Government spending has no impact on aggregate demand"
+        }
+      ],
+      "correct_option": "B",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 95,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about Rare Earth Elements (REEs) and Critical Minerals is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Modern technological innovations including Artificial Intelligence, robotics and space exploration extensively utilise Rare Earth Elements (REEs)."
+        },
+        {
+          "label": "2",
+          "text": "China has the highest share in mining of REEs followed by India."
+        },
+        {
+          "label": "3",
+          "text": "The Government of India launched the National Critical Mineral Mission (NCMM) in 2025 to establish a robust framework for self-reliance in the critical mineral sector."
+        },
+        {
+          "label": "4",
+          "text": "Rare Earth Elements are a set of 13 metallic elements."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "B",
+          "text": "3 only"
+        },
+        {
+          "label": "C",
+          "text": "1, 3 and 4"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 4"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 96,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about insurance in aviation sector is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "'Aviation Hull Insurance' covers the physical aircraft, including the body, engine, and on-board equipment."
+        },
+        {
+          "label": "2",
+          "text": "Under the Montreal Convention, adopted in 1999 by over 130 countries, including India, airlines are strictly liable to pay compensation to the family/nominee of every deceased passenger without requiring the family to prove fault."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 97,
+      "type": "multiple_statements",
+      "stem": "Which of the following statements about Crowdfunding is/are correct ?\nSelect the answer using the code given below :",
+      "statements": [
+        {
+          "label": "1",
+          "text": "Crowdfunding is solicitation of funds (small amount) from multiple investors through a web-based platform or social networking site for a specific project."
+        },
+        {
+          "label": "2",
+          "text": "Small and Medium Enterprises (SMEs) are able to raise funds at lower cost of capital without undergoing rigorous procedures."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 only"
+        },
+        {
+          "label": "B",
+          "text": "2 only"
+        },
+        {
+          "label": "C",
+          "text": "Both 1 and 2"
+        },
+        {
+          "label": "D",
+          "text": "Neither 1 nor 2"
+        }
+      ],
+      "correct_option": "C",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 98,
       "type": "table_based",
-      "stem": "Based on the table below, which crop requires the longest average growing period among the options?",
+      "stem": "With reference to different Committees in India, consider the following details :\nIn which of the above rows are all the details correctly matched ?",
       "statements": [],
       "pairs": [],
       "lists": null,
       "table": {
-        "headers": ["Crop", "Average growing period (days)"],
+        "headers": [
+          "Sl. No.",
+          "Committee",
+          "Objective",
+          "Organization under which it was formed"
+        ],
         "rows": [
-          ["Rice", "120"],
-          ["Wheat", "140"],
-          ["Cotton", "180"],
-          ["Groundnut", "110"]
+          [
+            "1.",
+            "R.N. Malhotra Committee",
+            "Comprehensive reforms of Insurance sector in India",
+            "Insurance Regulatory and Development Authority of India"
+          ],
+          [
+            "2.",
+            "L.C. Gupta Committee",
+            "Preparing a roadmap for the introduction of derivatives trading in India",
+            "Securities and Exchange Board of India"
+          ],
+          [
+            "3.",
+            "Urjit R. Patel Committee",
+            "Preparing a roadmap for reforming bank lending to the Housing sector",
+            "Reserve Bank of India"
+          ],
+          [
+            "4.",
+            "Y.H. Malegam Committee",
+            "Preparing a roadmap for reforms in Microfinance sector in India",
+            "Reserve Bank of India"
+          ]
         ]
       },
       "case_text": null,
       "options": [
         {
           "label": "A",
-          "text": "Rice"
+          "text": "2 only"
         },
         {
           "label": "B",
-          "text": "Cotton"
+          "text": "2 and 3"
         },
         {
           "label": "C",
-          "text": "Wheat"
+          "text": "1, 3 and 4"
         },
         {
           "label": "D",
-          "text": "Groundnut"
+          "text": "2 and 4"
         }
       ],
-      "correct_option": "B",
-      "is_dropped": false
+      "correct_option": "D",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
-      "number": 64,
-      "type": "standard_mcq",
-      "stem": "This question was dropped from evaluation in the official key.",
-      "statements": [],
+      "number": 99,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about the Non-Banking Financial Companies (NBFCs) in India :\nWhich of the statements given above is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "NBFCs cannot accept demand deposits."
+        },
+        {
+          "label": "2",
+          "text": "All the NBFCs operating in India have to be registered with the RBI."
+        },
+        {
+          "label": "3",
+          "text": "NBFCs form part of the payment and settlement system and can issue cheque drawn on itself."
+        },
+        {
+          "label": "4",
+          "text": "Deposit insurance facility of Deposit Insurance and Credit Guarantee Corporation (DICGC) is not available to the depositors of deposit taking NBFCs."
+        }
+      ],
       "pairs": [],
       "lists": null,
       "table": null,
@@ -184,23 +4453,70 @@
       "options": [
         {
           "label": "A",
-          "text": "Option A"
+          "text": "1 and 4"
         },
         {
           "label": "B",
-          "text": "Option B"
+          "text": "1, 2 and 3"
         },
         {
           "label": "C",
-          "text": "Option C"
+          "text": "4 only"
         },
         {
           "label": "D",
-          "text": "Option D"
+          "text": "2, 3 and 4"
         }
       ],
-      "correct_option": null,
-      "is_dropped": true
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
+    },
+    {
+      "number": 100,
+      "type": "multiple_statements",
+      "stem": "Consider the following statements about Multidimensional Poverty Index (MPI) :\nWhich of the statements given above is/are correct ?",
+      "statements": [
+        {
+          "label": "1",
+          "text": "MPI is calculated using Alkire-Foster methodology."
+        },
+        {
+          "label": "2",
+          "text": "MPI calculated by NITI Aayog has a total of twelve indicators."
+        },
+        {
+          "label": "3",
+          "text": "Maternal Health and Bank Account are common indicators in the MPI of NITI Aayog and MPI of United Nations Development Programme (UNDP)."
+        }
+      ],
+      "pairs": [],
+      "lists": null,
+      "table": null,
+      "case_text": null,
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "correct_option": "A",
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     }
   ]
 }
