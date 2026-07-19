@@ -65,6 +65,28 @@ export type QuestionTable = {
   rows: string[][]
 }
 
+export type StudyRef = {
+  subject: string
+  topic: string
+  subtopic: string
+  ncert_hint: string | null
+}
+
+export type SourceExplanation = {
+  source: 'forumias' | 'vajiram' | string
+  source_label: string
+  source_answer: string | null
+  explanation: string
+  source_url: string | null
+}
+
+export type QuestionNote = {
+  test_id: string
+  question_number: number
+  body: string
+  updated_at: string
+}
+
 export type Question = {
   number: number
   type: QuestionType
@@ -76,6 +98,7 @@ export type Question = {
   case_text: string | null
   options: QuestionOption[]
   is_dropped: boolean
+  study_refs?: StudyRef[]
 }
 
 export type TestDetail = TestSummary & {
@@ -138,6 +161,8 @@ export type ReviewQuestion = {
   lists: MatchingLists | null
   table: QuestionTable | null
   case_text: string | null
+  study_refs: StudyRef[]
+  explanations: SourceExplanation[]
 }
 
 export type AttemptReview = {

@@ -1,13 +1,18 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { fetchAttemptReview, fetchTest } from '../api/client'
+import {
+  fetchAttemptReview,
+  fetchTest,
+  fetchTestNotes,
+  saveQuestionNote,
+} from '../api/client'
 import { AppShell } from '../components/layout/AppShell'
 import { PageHeader } from '../components/layout/PageHeader'
 import { ReviewQuestionCard } from '../components/quiz/ReviewQuestionCard'
 import { Button } from '../components/ui/Button'
 import { ErrorState } from '../components/ui/ErrorState'
 import { LoadingState } from '../components/ui/LoadingState'
-import type { AttemptReview, TestSummary } from '../types/quiz'
+import type { AttemptReview, QuestionNote, TestSummary } from '../types/quiz'
 import { getReviewVerdict } from '../utils/questionState'
 
 type Filter = 'all' | 'correct' | 'incorrect' | 'unattempted' | 'dropped'
@@ -16,6 +21,7 @@ export function ReviewPage() {
   const { attemptId } = useParams()
   const [review, setReview] = useState<AttemptReview | null>(null)
   const [test, setTest] = useState<TestSummary | null>(null)
+  const [notesByNumber, setNotesByNumber] = useState<Record<number, string>>({})
   const [error, setError] = useState<string | null>(null)
   const [filter, setFilter] = useState<Filter>('all')
 
@@ -30,10 +36,14 @@ export function ReviewPage() {
 
       try {
         const reviewData = await fetchAttemptReview(attemptId)
-        const testData = await fetchTest(reviewData.attempt.test_id)
+        const [testData, notes] = await Promise.all([
+          fetchTest(reviewData.attempt.test_id),
+          fetchTestNotes(reviewData.attempt.test_id),
+        ])
         if (!cancelled) {
           setReview(reviewData)
           setTest(testData)
+          setNotesByNumber(mapNotes(notes))
           setError(null)
         }
       } catch (err) {
@@ -61,12 +71,30 @@ export function ReviewPage() {
     )
   }, [filter, review])
 
+  const handleSaveNote = useCallback(
+    async (questionNumber: number, body: string) => {
+      if (!review) {
+        return
+      }
+      const saved = await saveQuestionNote(
+        review.attempt.test_id,
+        questionNumber,
+        body,
+      )
+      setNotesByNumber((prev) => ({
+        ...prev,
+        [saved.question_number]: saved.body,
+      }))
+    },
+    [review],
+  )
+
   return (
     <AppShell>
       <PageHeader
         eyebrow="Answer review"
         title={test?.paper ?? 'Review answers'}
-        description="Correct answers are shown only after submission."
+        description="Correct answers, syllabus map, coaching analysis, and your notes — after submission."
       />
 
       {error ? <ErrorState message={error} /> : null}
@@ -90,6 +118,12 @@ export function ReviewPage() {
               </Button>
             </div>
           </div>
+
+          <p className="mb-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-2 text-sm text-[var(--color-muted)]">
+            Pilot: syllabus maps and ForumIAS/Vajiram analyses are filled for
+            questions 1–5. Remaining questions show empty study/analysis sections
+            until the full ingest.
+          </p>
 
           <div className="mb-5 flex flex-wrap gap-2" role="group" aria-label="Filter questions">
             {(
@@ -125,7 +159,12 @@ export function ReviewPage() {
           ) : (
             <div className="space-y-4">
               {filteredQuestions.map((question) => (
-                <ReviewQuestionCard key={question.number} question={question} />
+                <ReviewQuestionCard
+                  key={question.number}
+                  question={question}
+                  noteBody={notesByNumber[question.number] ?? ''}
+                  onSaveNote={(body) => handleSaveNote(question.number, body)}
+                />
               ))}
             </div>
           )}
@@ -142,4 +181,12 @@ export function ReviewPage() {
       </p>
     </AppShell>
   )
+}
+
+function mapNotes(notes: QuestionNote[]): Record<number, string> {
+  const mapped: Record<number, string> = {}
+  for (const note of notes) {
+    mapped[note.question_number] = note.body
+  }
+  return mapped
 }

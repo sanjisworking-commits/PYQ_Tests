@@ -44,7 +44,31 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "INDIAN CULTURE",
+          "topic": "Music in India",
+          "subtopic": "Forms of Indian Music",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "D",
+          "explanation": "Indian national anthem Jana Gana Mana is based on the Carnatic raga Dheera Shankarabharanam, which corresponds to Raga Bilawal in Hindustani music . Shankarabharanam means ‘the ornament of Shiva’ and is considered a healing raga in music therapy. It is cherished as a favourite of Lord Shiva who is the Vaidishwar or god of doctors, and is said to produce a feeling of empowerment and well-being in listeners.",
+          "source_url": "https://forumias.com/blog/question/which-one-of-the-following-carnatic-music-ragas-is-similar-to-raga-bilawal-in-hindustani-music/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "D",
+          "explanation": "Carnatic music and Hindustani classical music often have corresponding ragas with similar note structures though \nthey may differ in style and presentation.\n- The Hindustani Raga Bilawal corresponds to Dheera Shankarabharanam in Carnatic music. Both \nare based on the natural major scale and use all seven shuddha (natural) notes: Sa, Re, Ga, Ma, Pa, Dha, Ni\n- Dheera Shankarabharanam is the 29th Melakarta raga in Carnatic music and is one of the most important \nand foundational ragas in the Carnatic tradition. \n- The other ragas mentioned correspond to different Hindustani ragas:\n- Nat Bhairavi resembles Asavari\n- Kamavardhini corresponds to Puriya Dhanashree\n- Hanumatodi corresponds to Todi\nTherefore, option (d) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
     },
     {
       "number": 2,
@@ -74,7 +98,31 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "MODERN HISTORY",
+          "topic": "Scenario before 1857",
+          "subtopic": "The British conquest of India",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "A",
+          "explanation": "The artificially fixed rupee-sterling exchange rate at 1s 6d was prescribed by the Hilton-Young Commission and adopted by the British government “to aid the flow of remittances from India and to maintain India’s credit-worthiness.” Under colonial rule, Britain regularly transferred large amounts of money from India in the form of administrative expenses, pensions, debt payments, and profits. A stable exchange rate ensured smooth remittances to Britain and protected India’s reputation in international financial markets.",
+          "source_url": "https://forumias.com/blog/question/the-artificially-fixed-rupee-sterling-exchange-rate-prescribed-by-the-hilton-young-commission-1926-was-adopted-by-the-british-government-for-which-one-of-the-following-reasons/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "A",
+          "explanation": "The Hilton-Young Commission (Royal Commission on Indian Currency and Finance, 1926) recommended an \nartificially fixed rupee-sterling exchange rate under a gold-bullion standard system. The British Government \nadopted this policy mainly to protect imperial financial interests.\nV AJIRAM & RA VI\n8\nUPSC Preliminary Examination, 2026\nGeneral Studies Paper I – Set-D\n- The rupee was pegged at 1 shilling and 6 pence sterling , which kept the rupee artificially overvalued. \nThis arrangement primarily helped the British Government in ensuring smooth transfer of Home Charges \nfrom India to Britain. These payments included pensions of British officials, debt servicing, military \nexpenditures, and administrative remittances.\n- The policy also helped maintain India’s creditworthiness in London financial markets , thereby \nsafeguarding British financial confidence in colonial India. \nTherefore, option (a) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
     },
     {
       "number": 3,
@@ -113,7 +161,37 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "ANCIENT HISTORY",
+          "topic": "Pre Mauryan-Period",
+          "subtopic": "Evolution of Coins",
+          "ncert_hint": null
+        },
+        {
+          "subject": "ANCIENT HISTORY",
+          "topic": "Pre Mauryan-Period",
+          "subtopic": "Rise of urban centres",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "C",
+          "explanation": "Statement 1 is correct. Pali texts referred to several types of coins, which indicates the existence of active trade and commercial exchange . The archaeological discoveries of punch-marked coins from many sites suggest the use of coins which encouraged trade, markets, specialised occupations, and exchange of goods over long distances. Such expanding commercial activities generally developed in urban centres.  \n Statement 2 is correct. T he mention of coins such as kahapana, nikkha, kamsa, and kakanika in pali texts , along with the archaeological discovery of punch-marked coins, shows increasing use of metallic currency in economic transactions. These developments reflect a shift away from barter exchange towards a money economy.",
+          "source_url": "https://forumias.com/blog/download-official-upsc-2026-answer-key-forumias/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "C",
+          "explanation": "The emergence of coinage was an important feature of early urbanization and the growth of trade in ancient India.\n- Pali texts contain the first definite references to coins such as kahapana, nikkha, kamsa, pada, \nmasaka, and kakanika. Archaeological evidence from many sites has also yielded punch-marked coins, \nmost of them made of silver, confirming the literary references.\n- The beginning of coined money around the 6th–5th centuries BCE marked a major change in economic \ntransactions. It promoted long-distance trade, expanding markets, and increasing commercialization. The \nuse of money also led to the rise of money-lending, instruments of credit, and banking practices. So, \nstatement 2 is correct.\n- At the same time, the spread of coinage was closely linked with the emergence of urban life in the age \nof Mahajanapadas. Urban centres required more sophisticated systems of trade and exchange, which \ncoinage helped facilitate. So, statement 1 is correct.\nTherefore, option (c) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
     },
     {
       "number": 4,
@@ -160,7 +238,31 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "ARCHITECTURE",
+          "topic": "General",
+          "subtopic": "Indian Temple Architecture-Enduring Legacy of cultural heritage and architectural magnificence",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "B",
+          "explanation": "Statement 1 is incorrect. Malegitti Shivalaya of Badami has garbhagriha, pillared Mandapa which is accessed through mukhamandapa. The temple is roofed with Dravidian shikhara.   \n Statement 2 is correct. The Huchimalligudi Temple is an important example of experimentation in temple architecture during the Early Chalukyan age. It signifies the development of the R ekha-prasada type of shikhara , which is a characteristic feature of the Nagara style prevalent in northern and central India. Thus, this temple represents an early form of Nagara-style shikhara\n Statement 3 is correct. The Dashavatara Temple belongs to the Gupta period and is one of the earliest temples associated with the evolution of the shikhara . The presence of curving latina or rekha-prasada type of shikhara also makes it clear that this is an early example of a classic nagara style of temple.\n Statement 4 is incorrect. The Virupaksha Temple is predominantly a Dravidian-style temple. Although Pattadakal contains examples of both northern and southern architectural traditions, the Virupaksha Temple itself is mainly based on the Dravidian vimana style and not on the Nagara style.",
+          "source_url": "https://forumias.com/blog/download-official-upsc-2026-answer-key-forumias/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "B",
+          "explanation": "Indian temple architecture developed mainly into the Nagara, Dravida, and Vesara styles. The Nagara style is \ncharacterized by a curvilinear shikhara and became prominent in northern India.\n- The Dashavatara Temple is one of the earliest and most important examples of the Nagara style in \nnorthern India. So, point 3 is correct.\n- The Huchimalligudi Temple belongs to the early Chalukyan tradition at Aihole and the temple is \nassociated with Nagara-style shikhara features. So, point 2 is correct.\n- The Malegitti Shivalaya have an octagonal Dravidian shikhara crowned by a dome. So, point 1 is not \ncorrect.\n- The Virupaksha Temple at Pattadakal is a prominent example of the Dravidian style. So, point 4 is not \ncorrect.\nTherefore, option (b) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
     },
     {
       "number": 5,
@@ -190,7 +292,37 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [
+        {
+          "subject": "ANCIENT HISTORY",
+          "topic": "Pre Mauryan-Period",
+          "subtopic": "Jainism",
+          "ncert_hint": null
+        },
+        {
+          "subject": "RELIGION AND PHILOSOPHY",
+          "topic": "General",
+          "subtopic": "Rise of heterodox Sects- Buddhism, Jainism and Ajivikas",
+          "ncert_hint": null
+        }
+      ],
+      "explanations": [
+        {
+          "source": "forumias",
+          "source_label": "ForumIAS",
+          "source_answer": "B",
+          "explanation": "Jainism classifies rebirth into four principal forms of existence ( Gati ) based on one’s karma. These are Human beings, Heavenly beings, Tiryancha beings, and Infernal beings. \n Option a is correct. Deva or heavenly beings are one of the four recognised forms of existence in Jainism. They enjoy heavenly pleasures due to good karmas but still remain within the cycle of rebirth.\n Option b is incorrect. Yakshas are semi-divine attendant deities in Jain tradition, but they are not included among the four principal Gatis . \n Option c is correct. Human beings are one of the four forms of existence and are considered most suitable for spiritual progress and attainment of liberation.\n Option d is correct. Tiryancha i ncludes animals, birds, insects, and plants. These are recognised as one of the four forms of existence in Jainism.",
+          "source_url": "https://forumias.com/blog/download-official-upsc-2026-answer-key-forumias/"
+        },
+        {
+          "source": "vajiram",
+          "source_label": "Vajiram & Ravi",
+          "source_answer": "B",
+          "explanation": "Jainism is an ancient Indian religious tradition associated with Mahavira, a contemporary of the Buddha. \nAccording to Jain philosophy, life exists in four main forms of existence:\n- Deva – gods\n- Manushya – humans\n- Naraka/Naraki – hell beings\n- Tiryancha – animals and plants\n- The Jain doctrine further classifies living beings on the basis of their sense faculties, ranging from one-\nsensed organisms to more complex life forms.\n- The term Yaksha refers to semi-divine or attendant deities in Indian religious traditions, but it is not one \nof the four principal forms of existence recognized in Jainism.\nTherefore, option (b) is the correct answer.",
+          "source_url": "https://vajiramandravi.com/upsc-exam/upsc-prelims-answer-key-2026/"
+        }
+      ]
     },
     {
       "number": 6,
@@ -220,7 +352,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 7,
@@ -263,7 +397,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 8,
@@ -306,7 +442,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 9,
@@ -336,7 +474,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 10,
@@ -379,7 +519,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 11,
@@ -422,7 +564,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 12,
@@ -452,7 +596,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 13,
@@ -499,7 +645,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 14,
@@ -542,7 +690,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 15,
@@ -585,7 +735,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 16,
@@ -632,7 +784,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 17,
@@ -675,7 +829,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 18,
@@ -718,7 +874,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 19,
@@ -748,7 +906,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 20,
@@ -778,7 +938,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 21,
@@ -821,7 +983,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 22,
@@ -864,7 +1028,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 23,
@@ -907,7 +1073,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 24,
@@ -950,7 +1118,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 25,
@@ -997,7 +1167,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 26,
@@ -1040,7 +1212,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 27,
@@ -1083,7 +1257,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 28,
@@ -1126,7 +1302,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 29,
@@ -1165,7 +1343,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 30,
@@ -1212,7 +1392,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 31,
@@ -1242,7 +1424,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 32,
@@ -1285,7 +1469,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 33,
@@ -1328,7 +1514,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 34,
@@ -1371,7 +1559,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 35,
@@ -1414,7 +1604,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 36,
@@ -1457,7 +1649,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 37,
@@ -1504,7 +1698,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 38,
@@ -1534,7 +1730,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 39,
@@ -1577,7 +1775,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 40,
@@ -1607,7 +1807,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 41,
@@ -1650,7 +1852,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 42,
@@ -1693,7 +1897,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 43,
@@ -1736,7 +1942,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 44,
@@ -1779,7 +1987,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 45,
@@ -1822,7 +2032,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 46,
@@ -1865,7 +2077,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 47,
@@ -1908,7 +2122,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 48,
@@ -1951,7 +2167,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 49,
@@ -1990,7 +2208,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 50,
@@ -2033,7 +2253,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 51,
@@ -2063,7 +2285,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 52,
@@ -2110,7 +2334,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 53,
@@ -2153,7 +2379,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 54,
@@ -2183,7 +2411,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 55,
@@ -2226,7 +2456,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 56,
@@ -2269,7 +2501,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2312,7 +2546,9 @@
           "label": "D",
           "text": "All three statements are correct."
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2355,7 +2591,9 @@
           "label": "D",
           "text": "There is no correct statement."
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2402,7 +2640,9 @@
           "label": "D",
           "text": "There is no correct statement."
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2445,7 +2685,9 @@
           "label": "D",
           "text": "1 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2488,7 +2730,9 @@
           "label": "D",
           "text": "3 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2531,7 +2775,9 @@
           "label": "D",
           "text": "2 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [],
@@ -2588,7 +2834,9 @@
           "label": "D",
           "text": "None"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2639,7 +2887,9 @@
           "label": "D",
           "text": "3, 4 and 5"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2682,7 +2932,9 @@
           "label": "D",
           "text": "3 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2725,7 +2977,9 @@
           "label": "D",
           "text": "2 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [],
@@ -2792,7 +3046,9 @@
           "label": "D",
           "text": "A-1, B-2, C-4, D-3"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2835,7 +3091,9 @@
           "label": "D",
           "text": "2 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2878,7 +3136,9 @@
           "label": "D",
           "text": "2 only"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [
@@ -2925,7 +3185,9 @@
           "label": "D",
           "text": "4"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "statements": [],
@@ -2992,7 +3254,9 @@
           "label": "D",
           "text": "A-2, B-4, C-1, D-3"
         }
-      ]
+      ],
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 72,
@@ -3059,7 +3323,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 73,
@@ -3089,7 +3355,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 74,
@@ -3132,7 +3400,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 75,
@@ -3179,7 +3449,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 76,
@@ -3246,7 +3518,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 77,
@@ -3289,7 +3563,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 78,
@@ -3336,7 +3612,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 79,
@@ -3375,7 +3653,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 80,
@@ -3418,7 +3698,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 81,
@@ -3448,7 +3730,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 82,
@@ -3491,7 +3775,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 83,
@@ -3521,7 +3807,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 84,
@@ -3560,7 +3848,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 85,
@@ -3603,7 +3893,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 86,
@@ -3650,7 +3942,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 87,
@@ -3680,7 +3974,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 88,
@@ -3710,7 +4006,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 89,
@@ -3740,7 +4038,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 90,
@@ -3770,7 +4070,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 91,
@@ -3813,7 +4115,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 92,
@@ -3843,7 +4147,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 93,
@@ -3886,7 +4192,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 94,
@@ -3916,7 +4224,9 @@
         }
       ],
       "correct_option": "B",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 95,
@@ -3963,7 +4273,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 96,
@@ -4002,7 +4314,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 97,
@@ -4041,7 +4355,9 @@
         }
       ],
       "correct_option": "C",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 98,
@@ -4104,7 +4420,9 @@
         }
       ],
       "correct_option": "D",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 99,
@@ -4151,7 +4469,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     },
     {
       "number": 100,
@@ -4194,7 +4514,9 @@
         }
       ],
       "correct_option": "A",
-      "is_dropped": false
+      "is_dropped": false,
+      "study_refs": [],
+      "explanations": []
     }
   ]
 }

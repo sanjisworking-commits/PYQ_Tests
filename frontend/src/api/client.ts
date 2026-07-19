@@ -3,6 +3,7 @@ import type {
   AttemptReview,
   DashboardResponse,
   ExamSummary,
+  QuestionNote,
   ResponseUpdate,
   TestDetail,
   TestSummary,
@@ -123,6 +124,24 @@ export function submitAttempt(attemptId: string): Promise<Attempt> {
 
 export function fetchAttemptReview(attemptId: string): Promise<AttemptReview> {
   return request<AttemptReview>(`/api/attempts/${attemptId}/review`)
+}
+
+export function fetchTestNotes(testId: string): Promise<QuestionNote[]> {
+  return request<QuestionNote[]>(`/api/tests/${testId}/notes`)
+}
+
+export function saveQuestionNote(
+  testId: string,
+  questionNumber: number,
+  body: string,
+): Promise<QuestionNote> {
+  return request<QuestionNote>(
+    `/api/tests/${testId}/questions/${questionNumber}/notes`,
+    {
+      method: 'PUT',
+      body: JSON.stringify({ body }),
+    },
+  )
 }
 
 export function fetchDashboardAttempts(

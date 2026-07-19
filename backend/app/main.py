@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import init_db
-from app.routers import attempts, dashboard, exams, tests
+from app.routers import attempts, dashboard, exams, notes, tests
 
 
 @asynccontextmanager
@@ -34,6 +34,7 @@ app.add_middleware(
 
 app.include_router(exams.router)
 app.include_router(tests.router)
+app.include_router(notes.router)
 app.include_router(attempts.router)
 app.include_router(dashboard.router)
 
