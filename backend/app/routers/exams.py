@@ -2,8 +2,9 @@ from typing import List
 
 from fastapi import APIRouter, HTTPException, status
 
-from app.schemas.api import ExamSummary, TestSummary, YearSummary
+from app.schemas.api import ExamSummary, SyllabusOut, TestSummary, YearSummary
 from app.services.attempts import build_test_summary
+from app.services.syllabus import load_syllabus
 from app.services.test_loader import TestDataError, list_tests_for_year, load_years
 
 router = APIRouter(prefix="/api/exams", tags=["exams"])
@@ -18,6 +19,18 @@ def list_exams() -> List[ExamSummary]:
             slug="upsc",
         )
     ]
+
+
+@router.get("/upsc/syllabus", response_model=SyllabusOut)
+def get_upsc_syllabus() -> SyllabusOut:
+    try:
+        payload = load_syllabus()
+    except TestDataError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=str(exc),
+        ) from exc
+    return SyllabusOut.model_validate(payload)
 
 
 @router.get("/upsc/years", response_model=List[YearSummary])

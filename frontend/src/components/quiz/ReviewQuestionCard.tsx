@@ -2,11 +2,16 @@ import type { ReviewQuestion } from '../../types/quiz'
 import { getReviewVerdict } from '../../utils/questionState'
 import { MatchingLists } from './MatchingLists'
 import { MatchingPairs } from './MatchingPairs'
+import { QuestionNotesEditor } from './QuestionNotesEditor'
 import { QuestionTable } from './QuestionTable'
+import { SourceExplanationPanel } from './SourceExplanationPanel'
 import { StatementList } from './StatementList'
+import { StudyRefsList } from './StudyRefsList'
 
 type ReviewQuestionCardProps = {
   question: ReviewQuestion
+  noteBody: string
+  onSaveNote: (body: string) => Promise<void>
 }
 
 const verdictStyles = {
@@ -23,7 +28,11 @@ const verdictLabels = {
   dropped: 'Dropped',
 } as const
 
-export function ReviewQuestionCard({ question }: ReviewQuestionCardProps) {
+export function ReviewQuestionCard({
+  question,
+  noteBody,
+  onSaveNote,
+}: ReviewQuestionCardProps) {
   const verdict = getReviewVerdict(question)
 
   return (
@@ -98,6 +107,18 @@ export function ReviewQuestionCard({ question }: ReviewQuestionCardProps) {
           answer: {question.correct_option ?? '—'}
         </p>
       ) : null}
+
+      <StudyRefsList refs={question.study_refs ?? []} />
+      <SourceExplanationPanel
+        key={question.number}
+        explanations={question.explanations ?? []}
+        officialAnswer={question.correct_option}
+      />
+      <QuestionNotesEditor
+        questionNumber={question.number}
+        initialBody={noteBody}
+        onSave={onSaveNote}
+      />
     </article>
   )
 }
