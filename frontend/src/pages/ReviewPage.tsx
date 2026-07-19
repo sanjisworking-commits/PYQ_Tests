@@ -119,12 +119,6 @@ export function ReviewPage() {
             </div>
           </div>
 
-          <p className="mb-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-2 text-sm text-[var(--color-muted)]">
-            Pilot: syllabus maps and ForumIAS/Vajiram analyses are filled for
-            questions 1–5. Remaining questions show empty study/analysis sections
-            until the full ingest.
-          </p>
-
           <div className="mb-5 flex flex-wrap gap-2" role="group" aria-label="Filter questions">
             {(
               [

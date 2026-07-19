@@ -1,26 +1,41 @@
 from fastapi.testclient import TestClient
 
 from app.config import UPSC_DATA_DIR
+from app.services.syllabus import load_syllabus
 from app.services.test_loader import load_test_paper_from_path
 
 TEST_ID = "upsc-2026-gs-paper-1"
 
 
-def test_paper_has_pilot_study_refs_and_explanations() -> None:
+def test_syllabus_file_loads() -> None:
+    payload = load_syllabus()
+    assert payload["document"] == "upsc-syllabus"
+    assert len(payload["subjects"]) >= 50
+    first = payload["subjects"][0]
+    assert "subject" in first
+    assert "topics" in first
+
+
+def test_syllabus_api(client: TestClient) -> None:
+    response = client.get("/api/exams/upsc/syllabus")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["document"] == "upsc-syllabus"
+    assert len(body["subjects"]) >= 50
+
+
+def test_paper_has_full_study_refs_and_explanations() -> None:
     paper = load_test_paper_from_path(UPSC_DATA_DIR / "2026" / "gs-paper-1.json")
 
     assert paper.total_questions == 100
+    assert all(question.study_refs for question in paper.questions)
+    assert all(len(question.explanations) == 2 for question in paper.questions)
+
     first = paper.questions[0]
-    assert first.study_refs
     assert first.study_refs[0].subject == "INDIAN CULTURE"
-    assert len(first.explanations) == 2
     sources = {item.source for item in first.explanations}
     assert sources == {"forumias", "vajiram"}
-
-    # Pilot scope: Q6+ left empty for later full ingest.
-    sixth = paper.questions[5]
-    assert sixth.study_refs == []
-    assert sixth.explanations == []
+    assert first.explanations[0].explanation
 
 
 def test_notes_upsert_and_list(client: TestClient) -> None:
@@ -63,5 +78,6 @@ def test_review_includes_study_refs_and_explanations(client: TestClient) -> None
     assert q1["study_refs"]
     assert len(q1["explanations"]) == 2
     assert q1["explanations"][0]["explanation"]
-    assert by_number[6]["study_refs"] == []
-    assert by_number[6]["explanations"] == []
+    q100 = by_number[100]
+    assert q100["study_refs"]
+    assert len(q100["explanations"]) == 2

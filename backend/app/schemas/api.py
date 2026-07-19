@@ -15,6 +15,27 @@ class ExamSummary(BaseModel):
     slug: str
 
 
+class SyllabusSubtopicOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    topic: str
+    subtopics: List[str] = Field(default_factory=list)
+
+
+class SyllabusSubjectOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    subject: str
+    topics: List[SyllabusSubtopicOut] = Field(default_factory=list)
+
+
+class SyllabusOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    document: str
+    subjects: List[SyllabusSubjectOut]
+
+
 class YearSummary(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
