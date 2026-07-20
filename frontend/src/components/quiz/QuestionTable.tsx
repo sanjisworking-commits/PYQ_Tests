@@ -7,7 +7,7 @@ type QuestionTableProps = {
 export function QuestionTable({ table }: QuestionTableProps) {
   return (
     <div className="mt-4 overflow-x-auto rounded-md border border-[var(--color-ink)]/10">
-      <table className="min-w-full text-left text-sm">
+      <table className="min-w-full text-left text-base">
         <thead className="bg-[var(--color-accent)]/8">
           <tr>
             {table.headers.map((header) => (

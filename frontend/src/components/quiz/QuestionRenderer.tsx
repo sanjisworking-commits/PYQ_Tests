@@ -27,7 +27,7 @@ export function QuestionRenderer({
 
       {question.is_dropped ? (
         <div
-          className="mb-4 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950"
+          className="mb-4 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-base text-amber-950"
           role="status"
         >
           Dropped Question — Not included in scoring.
@@ -35,12 +35,12 @@ export function QuestionRenderer({
       ) : null}
 
       {question.case_text ? (
-        <p className="mb-3 rounded-md bg-white/70 px-3 py-3 text-sm leading-relaxed whitespace-pre-wrap">
+        <p className="mb-3 rounded-md bg-white/70 px-3 py-3 text-base leading-relaxed whitespace-pre-wrap">
           {question.case_text}
         </p>
       ) : null}
 
-      <p className="text-base leading-relaxed whitespace-pre-wrap">{question.stem}</p>
+      <p className="text-lg leading-relaxed whitespace-pre-wrap">{question.stem}</p>
 
       <StatementList statements={question.statements} />
       <MatchingPairs pairs={question.pairs} />

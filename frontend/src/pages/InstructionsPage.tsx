@@ -93,8 +93,8 @@ export function InstructionsPage() {
       ) : null}
 
       {test ? (
-        <section className="max-w-2xl rounded-md border border-[var(--color-ink)]/10 bg-white/70 px-5 py-6">
-          <p className="text-sm text-[var(--color-muted)]">
+        <section className="max-w-3xl rounded-md border border-[var(--color-ink)]/10 bg-white/70 px-5 py-5">
+          <p className="text-base text-[var(--color-muted)]">
             {test.exam} · {test.year} · Series {test.series}
           </p>
           <ul className="mt-4 space-y-2 text-[var(--color-ink)]/85">
@@ -113,7 +113,7 @@ export function InstructionsPage() {
             </li>
             <li>Questions used for scoring: {test.questions_for_scoring}</li>
           </ul>
-          <div className="mt-6 rounded-md bg-[var(--color-accent)]/5 px-4 py-3 text-sm text-[var(--color-ink)]/80">
+          <div className="mt-6 rounded-md bg-[var(--color-accent)]/5 px-4 py-3 text-base text-[var(--color-ink)]/80">
             Clicking Begin Test creates a timed attempt. Remaining time is restored
             from the server if you refresh.
           </div>

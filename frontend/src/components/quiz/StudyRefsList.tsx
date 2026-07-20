@@ -7,11 +7,11 @@ type StudyRefsListProps = {
 export function StudyRefsList({ refs }: StudyRefsListProps) {
   return (
     <section className="mt-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-3">
-      <h3 className="text-sm font-semibold text-[var(--color-ink)]">
+      <h3 className="text-base font-semibold text-[var(--color-ink)]">
         Revise here
       </h3>
       {refs.length === 0 ? (
-        <p className="mt-2 text-sm text-[var(--color-muted)]">
+        <p className="mt-2 text-base text-[var(--color-muted)]">
           No syllabus mapping yet for this question.
         </p>
       ) : (
@@ -19,7 +19,7 @@ export function StudyRefsList({ refs }: StudyRefsListProps) {
           {refs.map((ref) => (
             <li
               key={`${ref.subject}-${ref.topic}-${ref.subtopic}`}
-              className="text-sm leading-relaxed text-[var(--color-ink)]/90"
+              className="text-base leading-relaxed text-[var(--color-ink)]/90"
             >
               <span className="font-medium">{ref.subject}</span>
               <span className="text-[var(--color-muted)]"> · </span>

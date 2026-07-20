@@ -30,7 +30,7 @@ function ExplanationBlocks({ text }: { text: string }) {
 
   if (blocks.length === 0) {
     return (
-      <p className="whitespace-pre-wrap text-sm leading-relaxed text-[var(--color-ink)]/90">
+      <p className="whitespace-pre-wrap text-base leading-relaxed text-[var(--color-ink)]/90">
         {text}
       </p>
     )
@@ -48,7 +48,7 @@ function ExplanationBlocks({ text }: { text: string }) {
 function ExplanationBlockView({ block }: { block: ExplanationBlock }) {
   if (block.kind === 'paragraph') {
     return (
-      <p className="text-sm leading-relaxed text-[var(--color-ink)]/90">
+      <p className="text-base leading-relaxed text-[var(--color-ink)]/90">
         {block.text}
       </p>
     )
@@ -56,7 +56,7 @@ function ExplanationBlockView({ block }: { block: ExplanationBlock }) {
 
   if (block.kind === 'bullets') {
     return (
-      <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-[var(--color-ink)]/90">
+      <ul className="list-disc space-y-1.5 pl-5 text-base leading-relaxed text-[var(--color-ink)]/90">
         {block.items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
@@ -67,13 +67,13 @@ function ExplanationBlockView({ block }: { block: ExplanationBlock }) {
   return (
     <div className="rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-2.5">
       <div className="mb-1.5 flex flex-wrap items-center gap-2">
-        <span className="text-sm font-semibold text-[var(--color-ink)]">
+        <span className="text-base font-semibold text-[var(--color-ink)]">
           {block.label}
         </span>
         <VerdictChip verdict={block.verdict} />
       </div>
       {block.body ? (
-        <p className="text-sm leading-relaxed text-[var(--color-ink)]/90">
+        <p className="text-base leading-relaxed text-[var(--color-ink)]/90">
           {block.body}
         </p>
       ) : null}
@@ -94,10 +94,10 @@ export function SourceExplanationPanel({
   if (explanations.length === 0) {
     return (
       <section className="mt-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-3">
-        <h3 className="text-sm font-semibold text-[var(--color-ink)]">
+        <h3 className="text-base font-semibold text-[var(--color-ink)]">
           Answer analysis
         </h3>
-        <p className="mt-2 text-sm text-[var(--color-muted)]">
+        <p className="mt-2 text-base text-[var(--color-muted)]">
           No coaching explanation imported yet for this question.
         </p>
       </section>
@@ -114,7 +114,7 @@ export function SourceExplanationPanel({
   return (
     <section className="mt-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60">
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--color-ink)]/10 px-3 py-2.5">
-        <h3 className="text-sm font-semibold text-[var(--color-ink)]">
+        <h3 className="text-base font-semibold text-[var(--color-ink)]">
           Answer analysis
         </h3>
         <div

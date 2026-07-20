@@ -47,18 +47,18 @@ export function ReviewQuestionCard({
       </div>
 
       {question.is_dropped ? (
-        <div className="mb-3 rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-950">
+        <div className="mb-3 rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-base text-amber-950">
           Dropped Question — Not included in scoring.
         </div>
       ) : null}
 
       {question.case_text ? (
-        <p className="mb-3 whitespace-pre-wrap text-sm leading-relaxed">
+        <p className="mb-3 whitespace-pre-wrap text-base leading-relaxed">
           {question.case_text}
         </p>
       ) : null}
 
-      <p className="whitespace-pre-wrap text-base leading-relaxed">{question.stem}</p>
+      <p className="whitespace-pre-wrap text-lg leading-relaxed">{question.stem}</p>
       <StatementList statements={question.statements} />
       <MatchingPairs pairs={question.pairs} />
       {question.lists ? <MatchingLists lists={question.lists} /> : null}
@@ -72,7 +72,7 @@ export function ReviewQuestionCard({
             <li
               key={option.label}
               className={[
-                'rounded-md border px-3 py-2 text-sm',
+                'rounded-md border px-3 py-2 text-base',
                 isCorrect
                   ? 'border-emerald-400 bg-emerald-50'
                   : isSelected
@@ -102,7 +102,7 @@ export function ReviewQuestionCard({
       </ul>
 
       {!question.is_dropped ? (
-        <p className="mt-3 text-sm text-[var(--color-muted)]">
+        <p className="mt-3 text-base text-[var(--color-muted)]">
           Your answer: {question.selected_option ?? 'Not answered'} · Correct
           answer: {question.correct_option ?? '—'}
         </p>

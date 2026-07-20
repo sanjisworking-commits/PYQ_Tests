@@ -36,7 +36,7 @@ export function QuestionNotesEditor({
   return (
     <section className="mt-4 rounded-md border border-[var(--color-ink)]/10 bg-white/60 px-3 py-3">
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-        <h3 className="text-sm font-semibold text-[var(--color-ink)]">
+        <h3 className="text-base font-semibold text-[var(--color-ink)]">
           My notes
         </h3>
         <div className="flex items-center gap-2">
@@ -69,7 +69,7 @@ export function QuestionNotesEditor({
         }}
         rows={4}
         placeholder="Add revision notes for this question…"
-        className="w-full resize-y rounded-md border border-[var(--color-ink)]/15 bg-white px-3 py-2 text-sm leading-relaxed text-[var(--color-ink)] outline-none focus:border-[var(--color-accent)]"
+        className="w-full resize-y rounded-md border border-[var(--color-ink)]/15 bg-white px-3 py-2 text-base leading-relaxed text-[var(--color-ink)] outline-none focus:border-[var(--color-accent)]"
       />
       {error ? (
         <p className="mt-1 text-xs text-red-700" role="alert">

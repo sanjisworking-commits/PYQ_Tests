@@ -62,8 +62,8 @@ export function ResultsPage() {
       ) : null}
 
       {attempt && test ? (
-        <section className="max-w-2xl rounded-md border border-[var(--color-ink)]/10 bg-white/70 px-5 py-6">
-          <p className="text-sm text-[var(--color-muted)]">
+        <section className="max-w-3xl rounded-md border border-[var(--color-ink)]/10 bg-white/70 px-5 py-5">
+          <p className="text-base text-[var(--color-muted)]">
             {test.exam} · {test.year} · Series {test.series}
           </p>
 
@@ -86,7 +86,7 @@ export function ResultsPage() {
             </div>
           </div>
 
-          <dl className="mt-6 grid gap-3 text-sm sm:grid-cols-2">
+          <dl className="mt-6 grid gap-3 text-base sm:grid-cols-2">
             <div>
               <dt className="text-[var(--color-muted)]">Correct answers</dt>
               <dd className="font-medium">{attempt.correct_count ?? 0}</dd>
