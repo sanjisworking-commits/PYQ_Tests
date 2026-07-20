@@ -321,7 +321,7 @@ export function AttemptPage() {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-6xl px-4 py-10">
+      <div className="mx-auto max-w-6xl px-4 py-6">
         <LoadingState label="Loading attempt…" />
       </div>
     )
@@ -329,7 +329,7 @@ export function AttemptPage() {
 
   if (error && (!test || !attempt)) {
     return (
-      <div className="mx-auto max-w-3xl px-4 py-10">
+      <div className="mx-auto max-w-3xl px-4 py-6">
         <ErrorState message={error} />
         <div className="mt-4">
           <Button to={year && slug ? `/upsc/tests/${year}/${slug}/instructions` : '/upsc/tests'}>
@@ -388,7 +388,7 @@ export function AttemptPage() {
       <div className="mx-auto grid w-full max-w-6xl gap-4 px-4 py-4 pb-28 lg:grid-cols-[minmax(0,1fr)_280px] lg:pb-4">
         <main
           id="attempt-main"
-          className="rounded-md border border-[var(--color-ink)]/10 bg-white/75 p-4 sm:p-6"
+          className="rounded-md border border-[var(--color-ink)]/10 bg-white/75 p-4 sm:p-5"
         >
           {error ? (
             <div className="mb-4">

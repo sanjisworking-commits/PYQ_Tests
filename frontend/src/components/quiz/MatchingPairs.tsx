@@ -11,7 +11,7 @@ export function MatchingPairs({ pairs }: MatchingPairsProps) {
 
   return (
     <div className="mt-4 overflow-x-auto rounded-md border border-[var(--color-ink)]/10">
-      <table className="min-w-full text-left text-sm">
+      <table className="min-w-full text-left text-base">
         <thead className="bg-[var(--color-accent)]/8">
           <tr>
             <th className="px-3 py-2 font-semibold">Column I</th>

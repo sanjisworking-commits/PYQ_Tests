@@ -10,7 +10,7 @@ export function StatementList({ statements }: StatementListProps) {
   }
 
   return (
-    <ol className="mt-4 space-y-2 rounded-md bg-[var(--color-accent)]/5 px-4 py-3 text-sm">
+    <ol className="mt-4 space-y-2 rounded-md bg-[var(--color-accent)]/5 px-4 py-3 text-base">
       {statements.map((statement) => (
         <li key={statement.label} className="flex gap-2">
           <span className="font-semibold">{statement.label}.</span>

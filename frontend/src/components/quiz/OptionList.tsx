@@ -46,7 +46,7 @@ export function OptionList({
               onChange={() => onSelect(option.label)}
               className="mt-1 size-4 accent-[var(--color-accent)]"
             />
-            <span className="text-sm leading-relaxed">
+            <span className="text-base leading-relaxed">
               <span className="mr-2 font-semibold">{option.label}.</span>
               {option.text}
             </span>

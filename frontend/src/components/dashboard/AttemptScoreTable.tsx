@@ -24,7 +24,7 @@ function formatSubmittedAt(value: string | null): string {
 export function AttemptScoreTable({ attempts }: AttemptScoreTableProps) {
   return (
     <div className="overflow-x-auto rounded-md border border-[var(--color-ink)]/10">
-      <table className="min-w-full text-left text-sm">
+      <table className="min-w-full text-left text-base">
         <thead className="bg-[var(--color-accent)]/8 text-[var(--color-muted)]">
           <tr>
             <th className="px-3 py-2 font-medium">Attempt</th>

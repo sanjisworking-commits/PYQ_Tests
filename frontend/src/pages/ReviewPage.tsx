@@ -147,11 +147,11 @@ export function ReviewPage() {
           </div>
 
           {filteredQuestions.length === 0 ? (
-            <p className="rounded-md border border-dashed border-[var(--color-ink)]/20 px-4 py-6 text-sm text-[var(--color-muted)]">
+            <p className="rounded-md border border-dashed border-[var(--color-ink)]/20 px-4 py-4 text-base text-[var(--color-muted)]">
               No questions in this filter.
             </p>
           ) : (
-            <div className="space-y-4">
+            <div className="space-y-3">
               {filteredQuestions.map((question) => (
                 <ReviewQuestionCard
                   key={question.number}

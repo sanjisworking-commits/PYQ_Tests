@@ -57,8 +57,8 @@ export function DashboardPage() {
       ) : null}
 
       {data && data.total_attempts > 0 ? (
-        <div className="space-y-8">
-          <p className="text-sm text-[var(--color-muted)]">
+        <div className="space-y-5">
+          <p className="text-base text-[var(--color-muted)]">
             {data.total_attempts} submitted attempt
             {data.total_attempts === 1 ? '' : 's'} across {data.tests.length}{' '}
             test{data.tests.length === 1 ? '' : 's'}
@@ -70,7 +70,7 @@ export function DashboardPage() {
                 <h2 className="text-xl font-semibold text-[var(--color-ink)]">
                   {group.year} — {group.paper}
                 </h2>
-                <p className="text-sm text-[var(--color-muted)]">
+                <p className="text-base text-[var(--color-muted)]">
                   {group.exam} · Series {group.series} · Max {group.maximum_marks}
                 </p>
               </div>
