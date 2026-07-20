@@ -19,7 +19,8 @@ def test_load_years_metadata() -> None:
 
     assert [item.year for item in years] == [2026, 2025, 2024, 2023]
     assert years[0].status == YearStatus.AVAILABLE
-    assert years[1].status == YearStatus.COMING_SOON
+    assert years[1].status == YearStatus.AVAILABLE
+    assert years[2].status == YearStatus.COMING_SOON
 
 
 def test_load_sample_test_json_file() -> None:
@@ -55,7 +56,26 @@ def test_list_tests_for_year() -> None:
     papers = list_tests_for_year(2026)
     assert len(papers) == 1
     assert papers[0].id == "upsc-2026-gs-paper-1"
-    assert list_tests_for_year(2025) == []
+    papers_2025 = list_tests_for_year(2025)
+    assert len(papers_2025) == 1
+    assert papers_2025[0].id == "upsc-2025-gs-paper-1"
+
+
+def test_load_2025_gs_paper_1() -> None:
+    paper = load_test_paper_from_path(UPSC_DATA_DIR / "2025" / "gs-paper-1.json")
+
+    assert paper.id == "upsc-2025-gs-paper-1"
+    assert paper.year == 2025
+    assert paper.series == "A"
+    assert paper.total_questions == 100
+    assert paper.questions_for_scoring == 100
+    assert paper.dropped_question_numbers == []
+    assert all(question.correct_option in {"A", "B", "C", "D"} for question in paper.questions)
+    assert paper.questions[0].number == 1
+    assert "Alternative Investment Funds" in paper.questions[0].stem
+    assert paper.questions[0].correct_option == "B"
+    q47 = next(question for question in paper.questions if question.number == 47)
+    assert any("Majorana" in item.text for item in q47.statements)
 
 
 def test_invalid_json_raises_test_data_error(tmp_path: Path) -> None:
