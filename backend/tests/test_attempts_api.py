@@ -29,9 +29,11 @@ def test_list_and_get_tests_hide_answer_key(client: TestClient) -> None:
     detail = client.get(f"/api/tests/{TEST_ID}")
     assert detail.status_code == 200
     body = detail.json()
-    assert body["total_questions"] == 5
+    assert body["total_questions"] == 100
+    assert body["questions_for_scoring"] == 99
     assert "correct_option" not in body["questions"][0]
     assert body["questions"][0]["number"] == 1
+    assert "Carnatic" in body["questions"][0]["stem"]
 
 
 def test_attempt_lifecycle_score_and_review(client: TestClient) -> None:
@@ -40,7 +42,7 @@ def test_attempt_lifecycle_score_and_review(client: TestClient) -> None:
     attempt = created.json()
     attempt_id = attempt["id"]
     assert attempt["status"] == "in_progress"
-    assert len(attempt["responses"]) == 5
+    assert len(attempt["responses"]) == 100
     assert attempt["expires_at"] > attempt["started_at"]
 
     patched = client.patch(
@@ -86,7 +88,7 @@ def test_attempt_lifecycle_score_and_review(client: TestClient) -> None:
     assert result["status"] == "submitted"
     assert result["correct_count"] == 2
     assert result["incorrect_count"] == 1
-    assert result["unattempted_count"] == 1
+    assert result["unattempted_count"] == 96
     assert result["dropped_count"] == 1
     assert result["score"] == 3.33
     assert result["maximum_marks"] == 200
@@ -231,7 +233,7 @@ def test_clear_response_and_dropped_selection_ignored(client: TestClient) -> Non
     body = submitted.json()
     assert body["correct_count"] == 0
     assert body["incorrect_count"] == 0
-    assert body["unattempted_count"] == 4
+    assert body["unattempted_count"] == 99
     assert body["dropped_count"] == 1
     assert body["score"] == 0.0
 
