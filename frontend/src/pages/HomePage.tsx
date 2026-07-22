@@ -16,7 +16,7 @@ export function HomePage() {
         </p>
         <p className="mt-4 max-w-xl text-base text-[var(--color-ink)]/75">
           Attempt previous-year papers with timed practice, scoring, and review —
-          starting with GS Paper I 2026.
+          including GS Paper I 2025 and 2026.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button to="/upsc/tests">Attempt Tests</Button>
