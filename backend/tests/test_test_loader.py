@@ -21,6 +21,7 @@ def test_load_years_metadata() -> None:
     assert years[0].status == YearStatus.AVAILABLE
     assert years[1].status == YearStatus.AVAILABLE
     assert years[2].status == YearStatus.COMING_SOON
+    assert years[3].status == YearStatus.AVAILABLE
 
 
 def test_load_sample_test_json_file() -> None:
@@ -64,6 +65,29 @@ def test_list_tests_for_year() -> None:
     papers_2025 = list_tests_for_year(2025)
     assert len(papers_2025) == 1
     assert papers_2025[0].id == "upsc-2025-gs-paper-1"
+    papers_2023 = list_tests_for_year(2023)
+    assert len(papers_2023) == 1
+    assert papers_2023[0].id == "upsc-2023-gs-paper-1"
+
+
+def test_load_2023_gs_paper_with_vajiram_explanations() -> None:
+    paper = load_test_paper_from_path(UPSC_DATA_DIR / "2023" / "gs-paper-1.json")
+    assert paper.id == "upsc-2023-gs-paper-1"
+    assert paper.year == 2023
+    assert paper.series == "A"
+    assert paper.total_questions == 100
+    assert paper.questions_for_scoring == 100
+    assert all(len(question.explanations) >= 1 for question in paper.questions)
+    assert all(
+        any(item.source == "vajiram" for item in question.explanations)
+        for question in paper.questions
+    )
+    first = paper.questions[0]
+    assert first.correct_option == "B"
+    assert any("Wular" in s.text for s in first.statements) or "Wular" in first.stem
+    q100 = paper.questions[-1]
+    assert q100.number == 100
+    assert "G-20" in q100.stem or "G20" in q100.stem.replace(" ", "")
 
 
 def test_load_2025_gs_paper_with_explanations() -> None:
